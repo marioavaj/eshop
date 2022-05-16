@@ -57,10 +57,10 @@ a:hover {
 
 .wrapper {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 18% 18% 18% 18% 18%;
   grid-gap: 0.5em;
   width: 100%;
-  margin: -20em 0.5em 0.5em 0.5em;
+  margin: -20em 5% 0.5em 5%;
 }
 
 .wrapper img {
@@ -88,7 +88,7 @@ h1 {
 #mainBanner{
     z-index: -1;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     top: -20em;
 }
 
@@ -124,7 +124,7 @@ h1 {
 
 .itemBottom {
   grid-column-start: 1;
-  grid-column-end: 7;
+  grid-column-end: 6;
   border: solid 1px rgb(56, 54, 54);
 }
 
