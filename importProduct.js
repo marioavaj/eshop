@@ -11,7 +11,7 @@ fetch("./categories.json")
 fetch("./products.json")
   .then((response) => response.json())
   .then((json) => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 15; i++) {
       console.log("som v loope produkty");
       let item = document.getElementById("wrapper");
       let randomItem = Math.floor(Math.random() * (json.length-1));
