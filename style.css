@@ -121,8 +121,9 @@ h1 {
 }
 
 .sideMenu:hover {
-  color: darkgoldenrod;
+  color: gold;
   background-color: transparent;
+  transition: 0.5s ease;
 }
 
 
