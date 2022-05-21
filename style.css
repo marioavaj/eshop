@@ -50,7 +50,7 @@ body {
 .active {
   background-color: #3b3b3b;
   color: gold;
-  height: 124%;
+  height: 119%;
  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 
 }
@@ -153,13 +153,13 @@ h1 {
     height: 25em;
     background-color: rgba(167, 162, 153, 0.568);
     border: none;
+    
 
   }
 
   #newsLatterFormular{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
         
   }
 
@@ -208,19 +208,16 @@ color: silver;
   
 }
 
-.foot {
-  
+.foot {  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color:silver;
 width: 100%;
   font-size: 1em;
-  font-family: "Tahoma", Geneva, Verdana, sans-serif;
-  
+  font-family: "Tahoma", Geneva, Verdana, sans-serif;  
   line-height: 2;
-  background-color: #2c2d2d;
-  
+  background-color: #2c2d2d;  
   border-radius: 10px, 10px, 0px, 0px;
   
 }
@@ -233,9 +230,6 @@ li{
   font-size: 1em;
 }
 
-
-
-
 footer #copy {
   color: rgb(255, 255, 255);
   background-color: #2c2d2d;
@@ -243,7 +237,6 @@ footer #copy {
   font-size: 0.8em;
   border-radius: 0px 0px 0, 0;
 }
-
 
 @media only screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
