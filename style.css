@@ -86,7 +86,8 @@ header img {
 
 h1 {
   font-size: 1.2em;
-  color: rgb(130, 0, 0);
+  height: 20%;
+  color: rgb(44, 44, 44);
   padding: 0px;
   text-align: left;
 }
@@ -127,11 +128,13 @@ h1 {
 
 
 .items {
-  background-color: rgb(233, 233, 233);
-  padding: 1em;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
   margin: 0.5em;
   height: 100%;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  box-shadow: 5px 10px rgb(0, 0, 0);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);}
 
  
@@ -139,7 +142,7 @@ h1 {
     display: inline;
     font-size: 2em;
     font-weight: 600;
-    color: rgb(50, 0, 112);
+    color: rgb(23, 97, 0);
   }
 
   #newsLatterFormularWrapper{
@@ -299,11 +302,11 @@ footer #copy {
 }
 
 .text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+    
 }
 
 
