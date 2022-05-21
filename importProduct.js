@@ -18,7 +18,8 @@ fetch("./products.json")
 
       item.innerHTML +=
        
-        `<div class="items">`   +     `<h1>` +
+        `<div class="items">`   +     
+        `<h1>` +
         json[randomItem].PRODUCT_NAME +
         `</h1>` +
         `<img src="` +
@@ -26,8 +27,11 @@ fetch("./products.json")
         `" alt="" />` +
         `<div class="text">` +
         json[randomItem].DESCRIPTION +
-        `<br>`+`<br>`+`<span>` +
-        json[randomItem].PRICE_WITH_VAT +
-        `</span><br>`+`<img src="img/basketbutton.png" style="width: 3.5em; margin: auto" alt=""></div>`;
+        `<br>`+
+        `<br>`+
+        `<strong>`+json[randomItem].AVAILABILITY+`</strong>`+
+        `<span>` +
+        json[randomItem].PRICE_WITH_VAT + 
+        `</span>` + `s DPH`+`<br>`+`<img src="img/basketbutton.png" style="width: 3.5em; margin: auto" alt=""></div>`;
     }
   });
