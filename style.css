@@ -61,7 +61,7 @@ body {
 
 
 
-.wrapper {
+#wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
@@ -69,7 +69,7 @@ body {
   
 }
 
-.wrapper img {
+#wrapper img {
   width: 100%;
   
 }
@@ -78,7 +78,7 @@ header img {
   
 }
 
-.wrapper div {
+#wrapper div {
   font-size: 1.2em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   
@@ -116,7 +116,7 @@ h1 {
   color: silver;
   text-decoration: none;
   margin-bottom: 20px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .sideMenu:hover {
