@@ -1,0 +1,1304 @@
+{
+  "SHOP": {
+    "CATEGORIES": {
+      "CATEGORY": [
+        {
+          "-ID": "1",
+          "CATEGORY_NAME": "Povinná a doplnková výbava",
+          "CATEGORY_PATH": "Povinná a doplnková výbava",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "7",
+                "CATEGORY_NAME": "Povinná výbava",
+                "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "93",
+                      "CATEGORY_NAME": "Reflexné samolepky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava | Reflexné samolepky"
+                    },
+                    {
+                      "-ID": "35",
+                      "CATEGORY_NAME": "Lekárničky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava | Lekárničky"
+                    },
+                    {
+                      "-ID": "37",
+                      "CATEGORY_NAME": "Trojuholníky, vesty, laná",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava | Trojuholníky, vesty, laná"
+                    },
+                    {
+                      "-ID": "92",
+                      "CATEGORY_NAME": "Hasiace prístroje",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava | Hasiace prístroje"
+                    },
+                    {
+                      "-ID": "105",
+                      "CATEGORY_NAME": "Detské autosedačky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Povinná výbava | Detské autosedačky"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "8",
+                "CATEGORY_NAME": "Doplnková výbava",
+                "CATEGORY_PATH": "Povinná a doplnková výbava | Doplnková výbava",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "89",
+                      "CATEGORY_NAME": "Kanistre a nádoby",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Doplnková výbava | Kanistre a nádoby"
+                    },
+                    {
+                      "-ID": "130",
+                      "CATEGORY_NAME": "Ostatné",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Doplnková výbava | Ostatné"
+                    },
+                    {
+                      "-ID": "68",
+                      "CATEGORY_NAME": "Popruhy a upínače",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Doplnková výbava | Popruhy a upínače"
+                    },
+                    {
+                      "-ID": "211",
+                      "CATEGORY_NAME": "Skrutky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Doplnková výbava | Skrutky"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "9",
+                "CATEGORY_NAME": "Náradie",
+                "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "66",
+                      "CATEGORY_NAME": "Hustilky, kompresory a pneumerače",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Hustilky, kompresory a pneumerače"
+                    },
+                    {
+                      "-ID": "85",
+                      "CATEGORY_NAME": "Ostatné",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Ostatné"
+                    },
+                    {
+                      "-ID": "65",
+                      "CATEGORY_NAME": "Ručné náradie",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Ručné náradie"
+                    },
+                    {
+                      "-ID": "64",
+                      "CATEGORY_NAME": "Zdviháky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Zdviháky"
+                    },
+                    {
+                      "-ID": "209",
+                      "CATEGORY_NAME": "Hustilky - bicykel",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Hustilky - bicykel"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "10",
+                "CATEGORY_NAME": "Žiarovky",
+                "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "154",
+                      "CATEGORY_NAME": "H1",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | H1"
+                    },
+                    {
+                      "-ID": "153",
+                      "CATEGORY_NAME": "H4",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | H4"
+                    },
+                    {
+                      "-ID": "152",
+                      "CATEGORY_NAME": "H7",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | H7"
+                    },
+                    {
+                      "-ID": "210",
+                      "CATEGORY_NAME": "LED žiarovky",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | LED žiarovky"
+                    },
+                    {
+                      "-ID": "214",
+                      "CATEGORY_NAME": "H11",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | H11"
+                    },
+                    {
+                      "-ID": "155",
+                      "CATEGORY_NAME": "Sady",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Žiarovky | Sady"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "106",
+                "CATEGORY_NAME": "Tašky povinnej výbavy",
+                "CATEGORY_PATH": "Povinná a doplnková výbava | Tašky povinnej výbavy",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "107",
+                      "CATEGORY_NAME": "Prázdne TPV",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Tašky povinnej výbavy | Prázdne TPV"
+                    },
+                    {
+                      "-ID": "142",
+                      "CATEGORY_NAME": "Sety s obsahom",
+                      "CATEGORY_PATH": "Povinná a doplnková výbava | Tašky povinnej výbavy | Sety s obsahom"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "2",
+          "CATEGORY_NAME": "Interiér - presné doplnky",
+          "CATEGORY_PATH": "Interiér - presné doplnky",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "11",
+                "CATEGORY_NAME": "Autorohože gumové",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "230",
+                      "CATEGORY_NAME": "Autorohože gumové 3D",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové 3D"
+                    },
+                    {
+                      "-ID": "38",
+                      "CATEGORY_NAME": "Autorohože gumové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové"
+                    },
+                    {
+                      "-ID": "39",
+                      "CATEGORY_NAME": "Autorohože gumové so zvýšeným okrajom",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové so zvýšeným okrajom"
+                    },
+                    {
+                      "-ID": "97",
+                      "CATEGORY_NAME": "Autorohože gumové univerzálne",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové univerzálne"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "15",
+                "CATEGORY_NAME": "Vaničky do kufra",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Vaničky do kufra",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "192",
+                      "CATEGORY_NAME": "Vaničky do kufra s organizérom",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Vaničky do kufra | Vaničky do kufra s organizérom"
+                    },
+                    {
+                      "-ID": "44",
+                      "CATEGORY_NAME": "Vaničky do kufra gumové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Vaničky do kufra | Vaničky do kufra gumové"
+                    },
+                    {
+                      "-ID": "45",
+                      "CATEGORY_NAME": "Vaničky do kufra plastové s protišmykom",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Vaničky do kufra | Vaničky do kufra plastové s protišmykom"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "242",
+                "CATEGORY_NAME": "Autokoberce textilné ŠTANDARD",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Autokoberce textilné ŠTANDARD"
+              },
+              {
+                "-ID": "215",
+                "CATEGORY_NAME": "Presné slnečné clony",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Presné slnečné clony"
+              },
+              {
+                "-ID": "13",
+                "CATEGORY_NAME": "Autopoťahy",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Autopoťahy",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "255",
+                      "CATEGORY_NAME": "Autopoťahy na mieru",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autopoťahy | Autopoťahy na mieru"
+                    },
+                    {
+                      "-ID": "87",
+                      "CATEGORY_NAME": "Autotričká",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autopoťahy | Autotričká"
+                    },
+                    {
+                      "-ID": "40",
+                      "CATEGORY_NAME": "Univerzálne autopoťahy",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Autopoťahy | Univerzálne autopoťahy"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "14",
+                "CATEGORY_NAME": "Opierky lakťové",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Opierky lakťové",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "42",
+                      "CATEGORY_NAME": "Univerzálne lakťové opierky",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Opierky lakťové | Univerzálne lakťové opierky"
+                    },
+                    {
+                      "-ID": "43",
+                      "CATEGORY_NAME": "Presné (Armster)",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Opierky lakťové | Presné (Armster)"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "186",
+                "CATEGORY_NAME": "Kryty prahov dverí",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahov dverí",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "203",
+                      "CATEGORY_NAME": "Kryty prahov dverí nerezové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahov dverí | Kryty prahov dverí nerezové"
+                    },
+                    {
+                      "-ID": "202",
+                      "CATEGORY_NAME": "Kryty prahov dverí plastové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahov dverí | Kryty prahov dverí plastové"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "187",
+                "CATEGORY_NAME": "Kryty prahu kufra",
+                "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahu kufra",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "198",
+                      "CATEGORY_NAME": "Kryty prahu kufra nerezové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahu kufra | Kryty prahu kufra nerezové"
+                    },
+                    {
+                      "-ID": "197",
+                      "CATEGORY_NAME": "Kryty prahu kufra plastové",
+                      "CATEGORY_PATH": "Interiér - presné doplnky | Kryty prahu kufra | Kryty prahu kufra plastové"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "3",
+          "CATEGORY_NAME": "Exteriér - presné doplnky",
+          "CATEGORY_PATH": "Exteriér - presné doplnky",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "196",
+                "CATEGORY_NAME": "Nosiče",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "217",
+                      "CATEGORY_NAME": "Nosiče bicyklov na ťažné zariadenie",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Nosiče bicyklov na ťažné zariadenie"
+                    },
+                    {
+                      "-ID": "177",
+                      "CATEGORY_NAME": "Priečne strešné nosiče - priečniky",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Priečne strešné nosiče - priečniky"
+                    },
+                    {
+                      "-ID": "104",
+                      "CATEGORY_NAME": "Nosiče bicyklov na strechu",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Nosiče bicyklov na strechu"
+                    },
+                    {
+                      "-ID": "165",
+                      "CATEGORY_NAME": "Nosiče lyží",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Nosiče lyží"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "16",
+                "CATEGORY_NAME": "Autoboxy",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "216",
+                      "CATEGORY_NAME": "Autoboxy PRÍSLUŠENSTVO",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy PRÍSLUŠENSTVO"
+                    },
+                    {
+                      "-ID": "86",
+                      "CATEGORY_NAME": "Autoboxy HAKR",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy HAKR"
+                    },
+                    {
+                      "-ID": "218",
+                      "CATEGORY_NAME": "Autoboxy PACKLINE",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy PACKLINE"
+                    },
+                    {
+                      "-ID": "201",
+                      "CATEGORY_NAME": "Autoboxy NORTHLINE",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy NORTHLINE"
+                    },
+                    {
+                      "-ID": "194",
+                      "CATEGORY_NAME": "Autoboxy NEUMANN",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy NEUMANN"
+                    },
+                    {
+                      "-ID": "195",
+                      "CATEGORY_NAME": "Autoboxy THULE",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Autoboxy | Autoboxy THULE"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "17",
+                "CATEGORY_NAME": "Deflektory",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Deflektory"
+              },
+              {
+                "-ID": "247",
+                "CATEGORY_NAME": "Cyklovozíky",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Cyklovozíky"
+              },
+              {
+                "-ID": "18",
+                "CATEGORY_NAME": "Kryty pod motor",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Kryty pod motor",
+                "CATEGORIES": {
+                  "CATEGORY": {
+                    "-ID": "191",
+                    "CATEGORY_NAME": "Montážne prvky pre kryty motora",
+                    "CATEGORY_PATH": "Exteriér - presné doplnky | Kryty pod motor | Montážne prvky pre kryty motora"
+                  }
+                }
+              },
+              {
+                "-ID": "19",
+                "CATEGORY_NAME": "Kryty prednej kapoty",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Kryty prednej kapoty"
+              },
+              {
+                "-ID": "98",
+                "CATEGORY_NAME": "Clony zimné",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Clony zimné"
+              },
+              {
+                "-ID": "20",
+                "CATEGORY_NAME": "Lapače nečistôt",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Lapače nečistôt",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "111",
+                      "CATEGORY_NAME": "Presné lapače nečistôt",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Lapače nečistôt | Presné lapače nečistôt"
+                    },
+                    {
+                      "-ID": "112",
+                      "CATEGORY_NAME": "Univerzálne lapače nečistôt",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Lapače nečistôt | Univerzálne lapače nečistôt"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "21",
+                "CATEGORY_NAME": "Ochranné lišty dverí",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Ochranné lišty dverí"
+              },
+              {
+                "-ID": "22",
+                "CATEGORY_NAME": "Puklice",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "220",
+                      "CATEGORY_NAME": "Samolepky na stredy kolies",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Samolepky na stredy kolies"
+                    },
+                    {
+                      "-ID": "46",
+                      "CATEGORY_NAME": "Puklice 13",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Puklice 13"
+                    },
+                    {
+                      "-ID": "47",
+                      "CATEGORY_NAME": "Puklice 14",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Puklice 14"
+                    },
+                    {
+                      "-ID": "48",
+                      "CATEGORY_NAME": "Puklice 15",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Puklice 15"
+                    },
+                    {
+                      "-ID": "49",
+                      "CATEGORY_NAME": "Puklice 16",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Puklice 16"
+                    },
+                    {
+                      "-ID": "143",
+                      "CATEGORY_NAME": "Puklice 17",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Puklice | Puklice 17"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "23",
+                "CATEGORY_NAME": "Stierače",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "95",
+                      "CATEGORY_NAME": "Klasické stierače Special",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Klasické stierače Special"
+                    },
+                    {
+                      "-ID": "96",
+                      "CATEGORY_NAME": "Truck & Bus stierače",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Truck & Bus stierače"
+                    },
+                    {
+                      "-ID": "51",
+                      "CATEGORY_NAME": "Grafitové stierače - Super Flat",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Grafitové stierače - Super Flat"
+                    },
+                    {
+                      "-ID": "52",
+                      "CATEGORY_NAME": "Pružné stierače Heyner (s náhradnou gumičkou)",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Pružné stierače Heyner (s náhradnou gumičkou)"
+                    },
+                    {
+                      "-ID": "53",
+                      "CATEGORY_NAME": "Adaptére",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Adaptére"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "99",
+                "CATEGORY_NAME": "Snehové reťaze",
+                "CATEGORY_PATH": "Exteriér - presné doplnky | Snehové reťaze",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "100",
+                      "CATEGORY_NAME": "Osobné autá",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Snehové reťaze | Osobné autá"
+                    },
+                    {
+                      "-ID": "101",
+                      "CATEGORY_NAME": "SUV, 4x4, dodávky",
+                      "CATEGORY_PATH": "Exteriér - presné doplnky | Snehové reťaze | SUV, 4x4, dodávky"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "5",
+          "CATEGORY_NAME": "Univerzálne doplnky",
+          "CATEGORY_PATH": "Univerzálne doplnky",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "31",
+                "CATEGORY_NAME": "Interiérové autodoplnky",
+                "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "246",
+                      "CATEGORY_NAME": "Hľadač kľúčov FIXED SMILE/ FIXED SENSE",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Hľadač kľúčov FIXED SMILE/ FIXED SENSE"
+                    },
+                    {
+                      "-ID": "67",
+                      "CATEGORY_NAME": "Hlavice na páky",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Hlavice na páky"
+                    },
+                    {
+                      "-ID": "166",
+                      "CATEGORY_NAME": "Kľúčenky",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Kľúčenky"
+                    },
+                    {
+                      "-ID": "159",
+                      "CATEGORY_NAME": "Organizéry",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Organizéry"
+                    },
+                    {
+                      "-ID": "163",
+                      "CATEGORY_NAME": "Pre deti",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Pre deti"
+                    },
+                    {
+                      "-ID": "189",
+                      "CATEGORY_NAME": "Príchytky a spony čalúnenia",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Príchytky a spony čalúnenia"
+                    },
+                    {
+                      "-ID": "240",
+                      "CATEGORY_NAME": "Živicové samolepky pre 3D autorohože",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Živicové samolepky pre 3D autorohože"
+                    },
+                    {
+                      "-ID": "55",
+                      "CATEGORY_NAME": "Držiaky na telefón",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Držiaky na telefón"
+                    },
+                    {
+                      "-ID": "56",
+                      "CATEGORY_NAME": "Na volant",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Na volant"
+                    },
+                    {
+                      "-ID": "58",
+                      "CATEGORY_NAME": "Slnečné rolety a clony",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Slnečné rolety a clony"
+                    },
+                    {
+                      "-ID": "60",
+                      "CATEGORY_NAME": "Praktické doplnky",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Praktické doplnky"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "32",
+                "CATEGORY_NAME": "Exteriérové autodoplnky",
+                "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "188",
+                      "CATEGORY_NAME": "Doplnky na vozík",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Doplnky na vozík"
+                    },
+                    {
+                      "-ID": "84",
+                      "CATEGORY_NAME": "Lišty",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Lišty"
+                    },
+                    {
+                      "-ID": "156",
+                      "CATEGORY_NAME": "Odrazky 3D živice",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Odrazky 3D živice"
+                    },
+                    {
+                      "-ID": "82",
+                      "CATEGORY_NAME": "Ostatné",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Ostatné"
+                    },
+                    {
+                      "-ID": "199",
+                      "CATEGORY_NAME": "Plachty na auto",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Plachty na auto"
+                    },
+                    {
+                      "-ID": "138",
+                      "CATEGORY_NAME": "Samolepky 3D živice",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Samolepky 3D živice"
+                    },
+                    {
+                      "-ID": "61",
+                      "CATEGORY_NAME": "Tahokov",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Tahokov"
+                    },
+                    {
+                      "-ID": "62",
+                      "CATEGORY_NAME": "Podložky pod ŠPZ",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Podložky pod ŠPZ"
+                    },
+                    {
+                      "-ID": "63",
+                      "CATEGORY_NAME": "Samolepky",
+                      "CATEGORY_PATH": "Univerzálne doplnky | Exteriérové autodoplnky | Samolepky"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "4",
+          "CATEGORY_NAME": "Autokozmetika a autochémia",
+          "CATEGORY_PATH": "Autokozmetika a autochémia",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "254",
+                "CATEGORY_NAME": "Detailing",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Detailing"
+              },
+              {
+                "-ID": "25",
+                "CATEGORY_NAME": "Interiérová",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "115",
+                      "CATEGORY_NAME": "Na palubnú dosku",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Na palubnú dosku"
+                    },
+                    {
+                      "-ID": "116",
+                      "CATEGORY_NAME": "Textil a koža",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Textil a koža"
+                    },
+                    {
+                      "-ID": "117",
+                      "CATEGORY_NAME": "Sklo a ostatné",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Sklo a ostatné"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "26",
+                "CATEGORY_NAME": "Exteriérová",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "118",
+                      "CATEGORY_NAME": "Autošampóny",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Autošampóny"
+                    },
+                    {
+                      "-ID": "119",
+                      "CATEGORY_NAME": "Disky, pneumatiky, brzdy",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Disky, pneumatiky, brzdy"
+                    },
+                    {
+                      "-ID": "120",
+                      "CATEGORY_NAME": "Okná a sklo",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Okná a sklo"
+                    },
+                    {
+                      "-ID": "121",
+                      "CATEGORY_NAME": "Vosky a leštenky",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Vosky a leštenky"
+                    },
+                    {
+                      "-ID": "122",
+                      "CATEGORY_NAME": "Karoséria a plasty",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Karoséria a plasty"
+                    },
+                    {
+                      "-ID": "123",
+                      "CATEGORY_NAME": "Motor a ostatné",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Motor a ostatné"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "28",
+                "CATEGORY_NAME": "Oleje a aditíva",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Oleje a aditíva",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "103",
+                      "CATEGORY_NAME": "Aditíva",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Oleje a aditíva | Aditíva"
+                    },
+                    {
+                      "-ID": "102",
+                      "CATEGORY_NAME": "Oleje",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Oleje a aditíva | Oleje"
+                    },
+                    {
+                      "-ID": "236",
+                      "CATEGORY_NAME": "Oleje Motul",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Oleje a aditíva | Oleje Motul"
+                    },
+                    {
+                      "-ID": "237",
+                      "CATEGORY_NAME": "Oleje Total",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Oleje a aditíva | Oleje Total"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "27",
+                "CATEGORY_NAME": "Farby a tmely",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Farby a tmely",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "125",
+                      "CATEGORY_NAME": "Farby v spreji",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Farby a tmely | Farby v spreji"
+                    },
+                    {
+                      "-ID": "124",
+                      "CATEGORY_NAME": "Spreje LOOP",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Farby a tmely | Spreje LOOP"
+                    },
+                    {
+                      "-ID": "126",
+                      "CATEGORY_NAME": "Tmely",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Farby a tmely | Tmely"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "29",
+                "CATEGORY_NAME": "Technické kvapaliny",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "137",
+                      "CATEGORY_NAME": "Brzdové kvapaliny",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Brzdové kvapaliny"
+                    },
+                    {
+                      "-ID": "132",
+                      "CATEGORY_NAME": "Mazivá",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Mazivá"
+                    },
+                    {
+                      "-ID": "133",
+                      "CATEGORY_NAME": "Multifunkčné",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Multifunkčné"
+                    },
+                    {
+                      "-ID": "136",
+                      "CATEGORY_NAME": "Odmastňovacie",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Odmastňovacie"
+                    },
+                    {
+                      "-ID": "135",
+                      "CATEGORY_NAME": "Podporné",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Podporné"
+                    },
+                    {
+                      "-ID": "134",
+                      "CATEGORY_NAME": "Vody a zmesy",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Technické kvapaliny | Vody a zmesy"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "71",
+                "CATEGORY_NAME": "Osviežovače vzduchu",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "193",
+                      "CATEGORY_NAME": "Little Joe",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Little Joe"
+                    },
+                    {
+                      "-ID": "251",
+                      "CATEGORY_NAME": "Mr & Mrs Cesare",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Mr & Mrs Cesare"
+                    },
+                    {
+                      "-ID": "235",
+                      "CATEGORY_NAME": "Parfémy",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Parfémy"
+                    },
+                    {
+                      "-ID": "127",
+                      "CATEGORY_NAME": "Stromčeky",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Stromčeky"
+                    },
+                    {
+                      "-ID": "128",
+                      "CATEGORY_NAME": "Tekuté",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Tekuté"
+                    },
+                    {
+                      "-ID": "141",
+                      "CATEGORY_NAME": "California scents",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | California scents"
+                    },
+                    {
+                      "-ID": "243",
+                      "CATEGORY_NAME": "Areon Home/ Garage Sticks",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Osviežovače vzduchu | Areon Home/ Garage Sticks"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "239",
+                "CATEGORY_NAME": "A1 Autokozmetika",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | A1 Autokozmetika"
+              },
+              {
+                "-ID": "30",
+                "CATEGORY_NAME": "Príslušenstvo",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Príslušenstvo",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "70",
+                      "CATEGORY_NAME": "Hubky a utierky",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Príslušenstvo | Hubky a utierky"
+                    },
+                    {
+                      "-ID": "72",
+                      "CATEGORY_NAME": "Kefy na umývanie",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Príslušenstvo | Kefy na umývanie"
+                    },
+                    {
+                      "-ID": "219",
+                      "CATEGORY_NAME": "Napeňovače a vedrá",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Príslušenstvo | Napeňovače a vedrá"
+                    },
+                    {
+                      "-ID": "69",
+                      "CATEGORY_NAME": "Škrabky, metličky a lopatky",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Príslušenstvo | Škrabky, metličky a lopatky"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "170",
+                "CATEGORY_NAME": "HB Body",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "172",
+                      "CATEGORY_NAME": "Antikorózne a ochranné prostriedky HB Body",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Antikorózne a ochranné prostriedky HB Body"
+                    },
+                    {
+                      "-ID": "171",
+                      "CATEGORY_NAME": "Farby v spreji HB Body",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Farby v spreji HB Body"
+                    },
+                    {
+                      "-ID": "174",
+                      "CATEGORY_NAME": "HB Body príslušenstvo",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | HB Body príslušenstvo"
+                    },
+                    {
+                      "-ID": "173",
+                      "CATEGORY_NAME": "Tesniace hmoty a lepidlá HB Body",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Tesniace hmoty a lepidlá HB Body"
+                    },
+                    {
+                      "-ID": "175",
+                      "CATEGORY_NAME": "Tmely HB Body",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Tmely HB Body"
+                    },
+                    {
+                      "-ID": "176",
+                      "CATEGORY_NAME": "Tužidlá, riedidlá a plniče HB Body",
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Tužidlá, riedidlá a plniče HB Body"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "144",
+          "CATEGORY_NAME": "AUTOGLYM - autokozmetika",
+          "CATEGORY_PATH": "AUTOGLYM - autokozmetika",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "145",
+                "CATEGORY_NAME": "Autoglym - interiér",
+                "CATEGORY_PATH": "AUTOGLYM - autokozmetika | Autoglym - interiér"
+              },
+              {
+                "-ID": "146",
+                "CATEGORY_NAME": "Autoglym - Exteriér",
+                "CATEGORY_PATH": "AUTOGLYM - autokozmetika | Autoglym - Exteriér"
+              },
+              {
+                "-ID": "147",
+                "CATEGORY_NAME": "Autoglym - príslušenstvo",
+                "CATEGORY_PATH": "AUTOGLYM - autokozmetika | Autoglym - príslušenstvo"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "182",
+          "CATEGORY_NAME": "Meguiar's - autokozmetika",
+          "CATEGORY_PATH": "Meguiar's - autokozmetika",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "184",
+                "CATEGORY_NAME": "Meguiars - exteriér",
+                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - exteriér"
+              },
+              {
+                "-ID": "183",
+                "CATEGORY_NAME": "Meguiars - interiér",
+                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - interiér"
+              },
+              {
+                "-ID": "185",
+                "CATEGORY_NAME": "Meguiars - príslušenstvo",
+                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - príslušenstvo"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "258",
+          "CATEGORY_NAME": "Koch Chemie - autokozmetika",
+          "CATEGORY_PATH": "Koch Chemie - autokozmetika",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "260",
+                "CATEGORY_NAME": "Koch Chemie - exteriér",
+                "CATEGORY_PATH": "Koch Chemie - autokozmetika | Koch Chemie - exteriér"
+              },
+              {
+                "-ID": "259",
+                "CATEGORY_NAME": "Koch Chemie - interiér",
+                "CATEGORY_PATH": "Koch Chemie - autokozmetika | Koch Chemie - interiér"
+              },
+              {
+                "-ID": "261",
+                "CATEGORY_NAME": "Koch Chemie - príslušenstvo",
+                "CATEGORY_PATH": "Koch Chemie - autokozmetika | Koch Chemie - príslušenstvo"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "204",
+          "CATEGORY_NAME": "Foliatec",
+          "CATEGORY_PATH": "Foliatec",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "206",
+                "CATEGORY_NAME": "Farba na brzdové strmene",
+                "CATEGORY_PATH": "Foliatec | Farba na brzdové strmene"
+              },
+              {
+                "-ID": "205",
+                "CATEGORY_NAME": "Guma v spreji",
+                "CATEGORY_PATH": "Foliatec | Guma v spreji"
+              },
+              {
+                "-ID": "207",
+                "CATEGORY_NAME": "Samolepiace linky na kolesá",
+                "CATEGORY_PATH": "Foliatec | Samolepiace linky na kolesá"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "6",
+          "CATEGORY_NAME": "Elektronika",
+          "CATEGORY_PATH": "Elektronika",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "74",
+                "CATEGORY_NAME": "Audio a príslušenstvo",
+                "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "83",
+                      "CATEGORY_NAME": "Antény",
+                      "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo | Antény"
+                    },
+                    {
+                      "-ID": "75",
+                      "CATEGORY_NAME": "Autorádiá",
+                      "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo | Autorádiá"
+                    },
+                    {
+                      "-ID": "148",
+                      "CATEGORY_NAME": "FM Modulátory",
+                      "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo | FM Modulátory"
+                    },
+                    {
+                      "-ID": "94",
+                      "CATEGORY_NAME": "Reproduktory",
+                      "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo | Reproduktory"
+                    },
+                    {
+                      "-ID": "208",
+                      "CATEGORY_NAME": "Slúchadlá",
+                      "CATEGORY_PATH": "Elektronika | Audio a príslušenstvo | Slúchadlá"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "149",
+                "CATEGORY_NAME": "Autokamery",
+                "CATEGORY_PATH": "Elektronika | Autokamery"
+              },
+              {
+                "-ID": "73",
+                "CATEGORY_NAME": "Nabíjačky autobatérií",
+                "CATEGORY_PATH": "Elektronika | Nabíjačky autobatérií",
+                "CATEGORIES": {
+                  "CATEGORY": {
+                    "-ID": "109",
+                    "CATEGORY_NAME": "Nabíjačky autobatérií",
+                    "CATEGORY_PATH": "Elektronika | Nabíjačky autobatérií | Nabíjačky autobatérií"
+                  }
+                }
+              },
+              {
+                "-ID": "33",
+                "CATEGORY_NAME": "Interiérová ",
+                "CATEGORY_PATH": "Elektronika | Interiérová ",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "190",
+                      "CATEGORY_NAME": "Autonabíjačky",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Autonabíjačky"
+                    },
+                    {
+                      "-ID": "77",
+                      "CATEGORY_NAME": "Do zapaľovača",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Do zapaľovača"
+                    },
+                    {
+                      "-ID": "245",
+                      "CATEGORY_NAME": "Káble a adaptéry",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Káble a adaptéry"
+                    },
+                    {
+                      "-ID": "78",
+                      "CATEGORY_NAME": "Ostatné",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Ostatné"
+                    },
+                    {
+                      "-ID": "249",
+                      "CATEGORY_NAME": "Powerbanky",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Powerbanky"
+                    },
+                    {
+                      "-ID": "248",
+                      "CATEGORY_NAME": "Sieťové nabíjačky",
+                      "CATEGORY_PATH": "Elektronika | Interiérová  | Sieťové nabíjačky"
+                    }
+                  ]
+                }
+              },
+              {
+                "-ID": "34",
+                "CATEGORY_NAME": "Exteriérová",
+                "CATEGORY_PATH": "Elektronika | Exteriérová",
+                "CATEGORIES": {
+                  "CATEGORY": [
+                    {
+                      "-ID": "81",
+                      "CATEGORY_NAME": "Ostatné",
+                      "CATEGORY_PATH": "Elektronika | Exteriérová | Ostatné"
+                    },
+                    {
+                      "-ID": "150",
+                      "CATEGORY_NAME": "Parkovacie senzory",
+                      "CATEGORY_PATH": "Elektronika | Exteriérová | Parkovacie senzory"
+                    },
+                    {
+                      "-ID": "79",
+                      "CATEGORY_NAME": "Svetlá",
+                      "CATEGORY_PATH": "Elektronika | Exteriérová | Svetlá"
+                    },
+                    {
+                      "-ID": "80",
+                      "CATEGORY_NAME": "Užitočné",
+                      "CATEGORY_PATH": "Elektronika | Exteriérová | Užitočné"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "139",
+          "CATEGORY_NAME": "Motodoplnky",
+          "CATEGORY_PATH": "Motodoplnky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "140",
+              "CATEGORY_NAME": "Motodoplnky",
+              "CATEGORY_PATH": "Motodoplnky | Motodoplnky"
+            }
+          }
+        },
+        {
+          "-ID": "160",
+          "CATEGORY_NAME": "Reflexné prvky",
+          "CATEGORY_PATH": "Reflexné prvky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "161",
+              "CATEGORY_NAME": "Reflexné prvky",
+              "CATEGORY_PATH": "Reflexné prvky | Reflexné prvky"
+            }
+          }
+        },
+        {
+          "-ID": "91",
+          "CATEGORY_NAME": "Nástenné lekárničky",
+          "CATEGORY_PATH": "Nástenné lekárničky",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "179",
+                "CATEGORY_NAME": "Náplne do lekárničiek",
+                "CATEGORY_PATH": "Nástenné lekárničky | Náplne do lekárničiek"
+              },
+              {
+                "-ID": "180",
+                "CATEGORY_NAME": "Obaly-nástenná lekárnička",
+                "CATEGORY_PATH": "Nástenné lekárničky | Obaly-nástenná lekárnička"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "231",
+          "CATEGORY_NAME": "Rukavice TEGERA",
+          "CATEGORY_PATH": "Rukavice TEGERA",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "232",
+              "CATEGORY_NAME": "Pracovné rukavice",
+              "CATEGORY_PATH": "Rukavice TEGERA | Pracovné rukavice"
+            }
+          }
+        },
+        {
+          "-ID": "226",
+          "CATEGORY_NAME": "Ochrana a dezinfekcia",
+          "CATEGORY_PATH": "Ochrana a dezinfekcia",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "228",
+                "CATEGORY_NAME": "Dezinfekčné prípravky",
+                "CATEGORY_PATH": "Ochrana a dezinfekcia | Dezinfekčné prípravky"
+              },
+              {
+                "-ID": "227",
+                "CATEGORY_NAME": "Ochranné rúška na tvár",
+                "CATEGORY_PATH": "Ochrana a dezinfekcia | Ochranné rúška na tvár"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "233",
+          "CATEGORY_NAME": "Darčekové poukážky",
+          "CATEGORY_PATH": "Darčekové poukážky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "234",
+              "CATEGORY_NAME": "Darčekové poukážky",
+              "CATEGORY_PATH": "Darčekové poukážky | Darčekové poukážky"
+            }
+          }
+        },
+        {
+          "-ID": "252",
+          "CATEGORY_NAME": "Aktuálny Newsletter",
+          "CATEGORY_PATH": "Aktuálny Newsletter",
+          "CATEGORIES": {
+            "CATEGORY": [
+              {
+                "-ID": "253",
+                "CATEGORY_NAME": "MEGUIARS Výpredaj",
+                "CATEGORY_PATH": "Aktuálny Newsletter | MEGUIARS Výpredaj"
+              },
+              {
+                "-ID": "257",
+                "CATEGORY_NAME": "Všetko do 4 €",
+                "CATEGORY_PATH": "Aktuálny Newsletter | Všetko do 4 €"
+              }
+            ]
+          }
+        },
+        {
+          "-ID": "157",
+          "CATEGORY_NAME": "Akcie",
+          "CATEGORY_PATH": "Akcie",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "200",
+              "CATEGORY_NAME": "Aktuálne akcie",
+              "CATEGORY_PATH": "Akcie | Aktuálne akcie"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
