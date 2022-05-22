@@ -20,8 +20,6 @@ body {
   z-index: 1;
   width: 100%;
   background-color: #2c2d2d;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 
 }
 
@@ -102,20 +100,14 @@ h1 {
 
 #tree {
   position:absolute;
-  font-family: Tahoma, sans-serif;
   left: 4em;
   top: 5em;
   background-color: #2c2d2d;
-  padding: 1em 0 0 1.1em;
+  padding: 2em 0 0 2em;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  height:34em;
-  width: 19em;
+  height:35em;
+  width: 20em;
   
-}
-
-#spaceCategory{
-  height: 0.2em;
-  color: transparent;
 }
 
 .sideMenu {
@@ -123,7 +115,6 @@ h1 {
   text-decoration: none;
   margin-bottom: 20px;
   font-size: 1.2em;
-  
 }
 
 .sideMenu:hover {

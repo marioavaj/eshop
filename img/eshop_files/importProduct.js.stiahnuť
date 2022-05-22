@@ -4,7 +4,7 @@ fetch("./categories.json")
     for (let i = 0; i < json.length; i++) {
       let tree = document.getElementById("tree");
       tree.innerHTML +=
-        `<a href="#" class="sideMenu"><i class="fa-solid fa-angle-right"></i>` + `  `+ json[i].CATEGORY_NAME +`<br>`+`</a>`+ `<div id="spaceCategory">.</div>`;
+        `<a href="#" class="sideMenu">` + json[i].CATEGORY_NAME + `</a><br>`;
     }
   });
 
