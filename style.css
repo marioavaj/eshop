@@ -4,41 +4,33 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   background-color: rgba(149, 149, 149, 0.264);
   background-size: cover;
-  
 }
 
-#TopMenu{
+#TopMenu {
   display: grid;
   grid-template-columns: auto auto;
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 1;
   width: 100%;
   background-color: #2c2d2d;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#logo{
-
+#logo {
   width: 250px;
 }
 
 .topnavWithoutLogo {
-  
   color: silver;
   text-align: center;
   padding: 1.3em 1.4em 1em 1.4em;
   text-decoration: none;
   font-size: 1.2em;
-  font-weight:600;
-  
+  font-weight: 600;
 }
 
 .topnavWithoutLogo:hover {
@@ -53,32 +45,22 @@ body {
   background-color: #3b3b3b;
   color: gold;
   height: 119%;
- clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
-
-
-
-
 
 #wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 42em 5% 0 5%;
-  
+  margin: 41.5em 5% 0 5%;
 }
 
 #wrapper img {
   width: 100%;
-  
 }
 header img {
   width: 100%;
-  
 }
-
-
 
 h1 {
   font-size: 1.2em;
@@ -86,32 +68,31 @@ h1 {
   color: rgb(44, 44, 44);
   padding: 0px;
   text-align: left;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#mainBanner{
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-    top: 3em;
-    transition: 1s ease;
+#mainBanner {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  top: 3em;
+  transition: 1s ease;
 }
 
 #tree {
-  position:absolute;
+  position: absolute;
   font-family: Tahoma, sans-serif;
   left: 4em;
   top: 5em;
   background-color: #2c2d2d;
   padding: 1em 0 0 1.1em;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  height:34em;
+  height: 34em;
   width: 19em;
-  
 }
 
-#spaceCategory{
+#spaceCategory {
   height: 0.2em;
   color: transparent;
 }
@@ -122,15 +103,69 @@ h1 {
   margin-bottom: 20px;
   font-size: 1.2em;
   
+  
 }
 
 .sideMenu:hover {
   color: gold;
   background-color: #3b3b3b;
   width: inherit;
-  transition: 0.5s ease;
+  transition: 0.5s ease; 
 }
 
+#search {
+  margin: auto 0.1em auto 1em;
+  height: 3em;
+  border: white;
+  width: 20em;
+}
+
+#find {
+  background-color: silver;
+  color: white;
+  margin: auto 1em auto 4px;
+  height: 3em;
+  width: 3em;
+  border: none;
+}
+
+#find:hover {
+  background-color: gold;
+  color: white;
+  cursor: pointer;
+}
+
+.description {
+  display: grid;
+  color: #2c2d2d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+  grid-template-columns: auto;
+  text-align: center;
+}
+
+#availability {
+  font-size: 0.8em;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(32, 97, 0);
+  text-align: center;
+}
+
+#price {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  background-color: rgba(149, 149, 149, 0.264);
+  padding: 0.5em;
+}
+
+#navFlexRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
 
 .items {
@@ -141,98 +176,88 @@ h1 {
   margin: 0.2em;
   height: 100%;
   box-shadow: 10px 10px rgb(0, 0, 0);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);}
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
 
- 
-  #price{
-    display: inline;
-    font-size: 1em;
-    font-weight: 600;
-    color:#2c2d2d;
-    background-color: gold;
-  }
+#price {
+  display: inline;
+  font-size: 1em;
+  
+  color: #2c2d2d;
+  background-color: gold;
+}
 
-  #newsLatterFormularWrapper{
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    width: 100%;
-    height: 25em;
-    background-color: rgba(167, 162, 153, 0.568);
-    border: none;
-    
+#newsLatterFormularWrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  width: 100%;
+  height: 25em;
+  background-color: rgba(167, 162, 153, 0.568);
+  border: none;
+}
 
-  }
+#newsLatterFormular {
+  display: flex;
+  justify-content: center;
+}
 
-  #newsLatterFormular{
-    display: flex;
-    justify-content: center;   
-        
-  }
-
-  #newsLatterFormularInput{
-    width: 40em;
-    height: 5em;
-    border: none;
-    margin: auto 0 auto 0;
-  }
-#newsLatterFormularButton{
+#newsLatterFormularInput {
+  width: 40em;
+  height: 5em;
+  border: none;
+  margin: auto 0 auto 0;
+}
+#newsLatterFormularButton {
   height: 2.1em;
   width: 4.5em;
   border: none;
   margin: auto 0 auto 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2em;
-background-color: #2c2d2d;
-color: silver;
+  background-color: #2c2d2d;
+  color: silver;
 }
 
-#newsLatterFormularButton:hover{
-
+#newsLatterFormularButton:hover {
   background-color: black;
-  cursor: pointer; 
+  cursor: pointer;
   color: gold;
 }
 
-#newsLatterText{
+#newsLatterText {
   display: flex;
   justify-content: center;
   margin: auto;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3em;
- 
   padding: 0.1em;
 }
 
-
-
-#newsLatterImage{
-  display: flex ;
+#newsLatterImage {
+  display: flex;
   justify-content: center;
   margin: auto;
-   width: 50%;
-    
-  
+  width: 50%;
 }
 
-.foot {  
+.foot {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color:silver;
-width: 100%;
+  color: silver;
+  width: 100%;
   font-size: 1em;
-  font-family: "Tahoma", Geneva, Verdana, sans-serif;  
+  font-family: "Tahoma", Geneva, Verdana, sans-serif;
   line-height: 2;
-  background-color: #2c2d2d;  
+  background-color: #2c2d2d;
   border-radius: 10px, 10px, 0px, 0px;
-  
 }
 
 ul {
   list-style-type: none;
 }
 
-li{
+li {
   font-size: 1em;
 }
 
@@ -253,7 +278,6 @@ footer #copy {
     display: block;
   }
 
-  
   .slideshow-container {
     display: none;
   }
@@ -279,57 +303,3 @@ footer #copy {
   }
 }
 
-#search{
-  margin: auto 0.1em auto 1em;
-  height: 3em;
-  border: white;
-  width: 20em;
-}
-
-#find{
-  background-color: silver;
-  color: white;
-  margin: auto 1em auto 4px;
-  height: 3em;
-  width: 3em;
-  border: none;
-}
-
-#find:hover{
-  background-color: gold;
-  color: white;
-  cursor: pointer;
-}
-
-.description{
-  
-  display: grid;
-  color: #2c2d2d;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.7em;
-  grid-template-columns: auto;
-  text-align: center;
-     
-}
-#availability{
-  font-size: 0.8em;
-  font-weight:700;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(32, 97, 0);
-  text-align: center;
-}
-
-#price{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 100;
-  text-align: center;
-  background-color: rgba(149, 149, 149, 0.264);
-  padding: 0.5em;
-}
-
-
-#navFlexRight{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
