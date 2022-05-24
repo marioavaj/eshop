@@ -30,14 +30,10 @@ fetch("./products.json")
         `<p id="availability">` +
         json[randomItem].AVAILABILITY +
         `</p>` +
-        `<br>` +
         `<span id="price">` +
         json[randomItem].PRICE_WITH_VAT +
         `<span id="dph"> €</span></span>` +
-        `<br>` +
-        `<button id="productDetail" onclick="productDetail(`+ randomItem +`)">Detail</button>`+
-        `<br>`+
-        `<br>`;
+        `<button id="productDetail" onclick="productDetail(`+ randomItem +`)">Detail</button>`;
         
     }
   });
