@@ -17,7 +17,7 @@ fetch("./products.json")
 
       item.innerHTML +=
         `<div class="items">` +
-        `<h1>` +
+        `<h1 class = "productName">` +
         json[randomItem].PRODUCT_NAME +
         `</h1>` +
         `<img class="imgProduct" src="` +
@@ -44,7 +44,7 @@ fetch("./products.json")
 
     fetch("./products.json")
    .then((response) => response.json())
-   .then((json) => console.log(json[randomItem].PRODUCT_NAME)
+   .then((json) => console.log(json[randomItem].ID)
      
    
     
