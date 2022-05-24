@@ -58,6 +58,13 @@ body {
 #wrapper img {
   width: 100%;
 }
+#wrapper img:hover {
+  transform: scale(1.3);
+  z-index: -1;
+  cursor:zoom-in;
+}
+
+
 header img {
   width: 100%;
 }
@@ -184,7 +191,21 @@ h1 {
   font-size: 1em;
   
   color: #2c2d2d;
-  background-color: gold;
+  background-color:silver;
+}
+
+
+#productDetail{
+ height: 3em;
+  background-color: chartreuse;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5em;
+}
+#productDetail:hover{
+background-color: gold;
+cursor: pointer;
+
 }
 
 #newsLatterFormularWrapper {
@@ -269,7 +290,22 @@ footer #copy {
   border-radius: 0px 0px 0, 0;
 }
 
+@media only screen and (max-width: 1600px){
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 39em 5% 0 5%;
+}
+
+} 
+
 @media only screen and (max-width: 600px) {
+
+
+ 
+
   .topnav a:not(:first-child) {
     display: none;
   }
