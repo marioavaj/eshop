@@ -69,7 +69,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 4em 5% 0 5%;
+  margin: 1em ;
 }
 
 .relatedProductsWrapper img {
@@ -80,6 +80,23 @@ body {
   transition: 1s ease;
   z-index: -1;
   cursor: zoom-in;
+}
+
+
+#relatedProductsH1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  color:  #2c2d2d;
+  border-top: 10px solid gold;
+  
+}
+
+#relatedProductsH1 strong{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  margin: 1em;
 }
 
 header img {
@@ -210,7 +227,7 @@ h1 {
 #productDetailWrapper {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 7em;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
    margin-left: 30%;
    margin-right: auto;
     display: grid;
@@ -253,9 +270,26 @@ font-weight: 600;
   grid-area: ID;
 
 }
-#AVAILABILITY{grid-area: AVAILABILITY;}
+#AVAILABILITY{
+  grid-area: AVAILABILITY;
+background-color: rgb(33, 33, 33);
+width: 20%;
+margin: 1em 0 1em 0;
+padding: 0.2em;
+text-align: center;
+border-radius: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+font-weight: 600;
+
+}
 #PRICE{grid-area: PRICE;}
-#PRICE_WITH_VAT{grid-area: PRICE_WITH_VAT;}
+#PRICE_WITH_VAT{
+  grid-area: PRICE_WITH_VAT;
+font-size: 2em;
+font-weight: 600;
+
+}
 
 #BASKET{
   grid-area: BASKET;

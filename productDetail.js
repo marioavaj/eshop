@@ -1,6 +1,8 @@
 
     var url = new URL(window.location.href);
     var id = url.searchParams.get("id");
+    var FirstWord="";
+    var FirstWorldFind='';
     
     
     
@@ -11,35 +13,48 @@
       for (let i = 0; i < json.length; i++) {
               
         if(json[i]["ID"] == id){
-            
+            FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0]
 
             let productDetailWrapper = document.getElementById("productDetailWrapper");
-            var CATEGORY_ID = json[i]["CATEGORY_ID"];
-            var PRODUCT_NAME = json[i]["PRODUCT_NAME"];
-            var FirstWord = json[i].PRODUCT_NAME.split(" ")[0]
+            
+            
 
             
            productDetailWrapper.innerHTML=
 
            `<img id="IMAGE_SRC" src= ${json[i]["IMAGE_SRC"]} alt="">`+
            `<div id="PRODUCT_NAME"> ${json[i]["PRODUCT_NAME"]}</div>`+
-          `<div id="ID"><span class = "productdetailSpan">Kód</span><br>${json[i]["ID"]}</div>`+
-          `<div id="AVAILABILITY"><span class = "productdetailSpan">Dostupnosť</span><br> ${json[i]["AVAILABILITY"]}</div>`+
-          `<div id="PRICE"><span class = "productdetailSpan">Cena bez DPH</span><br>${json[i]["PRICE"]}</div>`+
-          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan">Cena s DPH</span><br>${json[i]["PRICE_WITH_VAT"]}</div><br>`+
+          `<div id="ID"><span class = "productdetailSpan">Kód: </span>${json[i]["ID"]}</div>`+
+          `<p id="AVAILABILITY">${json[i]["AVAILABILITY"]}</p>`+
+          `<div id="PRICE"><span class = "productdetailSpan">Cena bez DPH</span><br>${json[i]["PRICE"]} €</div>`+
+          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${json[i]["PRICE_WITH_VAT"]} €</div><br>`+
           `<div id="DESCRIPTION"><span class = "productdetailSpan">Popis:</span><br> ${json[i]["DESCRIPTION"]}</div>`+
-          `<button id="BASKET">Vlož do košíka</button>`;  }
+          `<button id="BASKET">Vlož do košíka</button>`;}   
+  
+             
 
-          var FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0]
+    }
+});
+
+
+
+fetch("./products.json")
+    .then((response) => response.json())
+    .then((json) => {
+        var count = 0;
+        for (let i = 0; i < json.length; i++) {
+
+            FirstWord = json[i].PRODUCT_NAME.split(" ")[0]
             
-          
            if(FirstWorldFind == FirstWord){
+               
             
-            console.log(FirstWorldFind);
-            console.log(FirstWord);
-            
-            let relatedProductWrapper = document.querySelector('.relatedProductsWrapper')
+               if (count<15){
+                   count++;
+                     
+            let relatedProductWrapper = document.querySelector('.relatedProductsWrapper');
 
+            
             relatedProductWrapper.innerHTML +=
         `<div class="items">` +
         `<h1 class = "productName">` +
@@ -59,11 +74,7 @@
         json[i].PRICE_WITH_VAT +
         `<span id="dph"> €</span></span>` +
         `<a id="productDetail" href= "product.html?id=${json[i].ID}">Detail</a>`;}
-  
-    
-
-          
-
+    }
+               
     }
 });
-
