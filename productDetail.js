@@ -15,8 +15,10 @@
 
             let productDetailWrapper = document.getElementById("productDetailWrapper");
             var CATEGORY_ID = json[i]["CATEGORY_ID"];
-            
+            var PRODUCT_NAME = json[i]["PRODUCT_NAME"];
+            var FirstWord = json[i].PRODUCT_NAME.split(" ")[0]
 
+            
            productDetailWrapper.innerHTML=
 
            `<img id="IMAGE_SRC" src= ${json[i]["IMAGE_SRC"]} alt="">`+
@@ -28,14 +30,17 @@
           `<div id="DESCRIPTION"><span class = "productdetailSpan">Popis:</span><br> ${json[i]["DESCRIPTION"]}</div>`+
           `<button id="BASKET">Vlož do košíka</button>`;  }
 
+          var FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0]
+            
           
-          
-          if(json[i]["CATEGORY_ID"] == CATEGORY_ID){
-            console.log(json[i]["CATEGORY_ID"]);
-            console.log(CATEGORY_ID);
-            let relatedProduktWrapper = document.getElementById('relatedProduktWrapper')
+           if(FirstWorldFind == FirstWord){
+            
+            console.log(FirstWorldFind);
+            console.log(FirstWord);
+            
+            let relatedProductWrapper = document.querySelector('.relatedProductsWrapper')
 
-        relatedProduktWrapper.innerHTML +=
+            relatedProductWrapper.innerHTML +=
         `<div class="items">` +
         `<h1 class = "productName">` +
         json[i].PRODUCT_NAME +
@@ -55,7 +60,7 @@
         `<span id="dph"> €</span></span>` +
         `<a id="productDetail" href= "product.html?id=${json[i].ID}">Detail</a>`;}
   
-
+    
 
           
 

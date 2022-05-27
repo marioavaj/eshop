@@ -12,7 +12,7 @@ fetch("./products.json")
   .then((response) => response.json())
   .then((json) => {
     for (let i = 0; i < 15; i++) {
-      let item = document.getElementById("wrapper");
+      let item = document.querySelector(".productsWrapper");
       let randomItem = Math.floor(Math.random() * (json.length - 1));
       let id = json[randomItem].ID;
       

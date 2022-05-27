@@ -65,6 +65,23 @@ body {
   cursor: zoom-in;
 }
 
+.relatedProductsWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 4em 5% 0 5%;
+}
+
+.relatedProductsWrapper img {
+  width: 100%;
+}
+.relatedProductsWrapper img:hover {
+  transform: scale(1.5);
+  transition: 1s ease;
+  z-index: -1;
+  cursor: zoom-in;
+}
+
 header img {
   width: 100%;
 }
