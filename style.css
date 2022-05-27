@@ -237,7 +237,7 @@ h1 {
     "IMAGE_SRC AVAILABILITY "
     "IMAGE_SRC PRICE "
     "IMAGE_SRC PRICE_WITH_VAT "
-    "IMAGE_SRC BASKET"
+    "FIGURE BASKET"
     "DESCRIPTION DESCRIPTION ";
     border-top:10px solid gold;
     padding: 1em;
@@ -252,6 +252,10 @@ h1 {
   width: 100%;
   padding-right: 1em;
   padding-bottom: 1em;
+}
+
+#FIGURE{
+  grid-area: FIGURE;
 }
   #IMAGE_SRC:hover{ 
   transform: scale(2);
@@ -288,6 +292,21 @@ font-weight: 600;
   grid-area: PRICE_WITH_VAT;
 font-size: 2em;
 font-weight: 600;
+
+}
+
+#freeDelivery{
+  position: relative;
+  text-align: center;
+   background-color: chartreuse;
+   width: 70%;
+  height: 2em;
+  border-radius: 1em;
+  border: aqua;
+  color: rgb(255, 0, 0);
+  font-size: 1.3em;
+  margin-left: 3em;
+  font-weight: 600;
 
 }
 

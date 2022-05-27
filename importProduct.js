@@ -15,7 +15,11 @@ fetch("./products.json")
       let item = document.querySelector(".productsWrapper");
       let randomItem = Math.floor(Math.random() * (json.length - 1));
       let id = json[randomItem].ID;
-      
+      let price = parseInt(json[i]["PRICE_WITH_VAT"]);
+            let freeDelivery="";
+            if (price>29){
+                freeDelivery = "Doprava zdarma"
+            }
 
       item.innerHTML +=
         `<div class="items">` +

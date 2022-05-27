@@ -11,31 +11,33 @@
     .then((json) => {
 
       for (let i = 0; i < json.length; i++) {
-              
+       
         if(json[i]["ID"] == id){
-            FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0]
+            FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0];
+            let price = parseInt(json[i]["PRICE_WITH_VAT"]);
+            console.log(price)
+            let freeDelivery=`Nad 30 € doprava zdarma`;
+            if (price>29){
+                freeDelivery = `Doprava zdarma`;
+
+                
+            } 
 
             let productDetailWrapper = document.getElementById("productDetailWrapper");
             
-            
-
-            
            productDetailWrapper.innerHTML=
-
            `<img id="IMAGE_SRC" src= ${json[i]["IMAGE_SRC"]} alt="">`+
+           `<button id="freeDelivery"> ${freeDelivery}</button>`+
            `<div id="PRODUCT_NAME"> ${json[i]["PRODUCT_NAME"]}</div>`+
           `<div id="ID"><span class = "productdetailSpan">Kód: </span>${json[i]["ID"]}</div>`+
           `<p id="AVAILABILITY">${json[i]["AVAILABILITY"]}</p>`+
           `<div id="PRICE"><span class = "productdetailSpan">Cena bez DPH</span><br>${json[i]["PRICE"]} €</div>`+
-          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${json[i]["PRICE_WITH_VAT"]} €</div><br>`+
+          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${json[i]["PRICE_WITH_VAT"]} €</span></div><br>`+
           `<div id="DESCRIPTION"><span class = "productdetailSpan">Popis:</span><br> ${json[i]["DESCRIPTION"]}</div>`+
           `<button id="BASKET">Vlož do košíka</button>`;}   
-  
-             
 
     }
 });
-
 
 
 fetch("./products.json")
