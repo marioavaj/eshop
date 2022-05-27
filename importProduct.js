@@ -14,6 +14,8 @@ fetch("./products.json")
     for (let i = 0; i < 15; i++) {
       let item = document.getElementById("wrapper");
       let randomItem = Math.floor(Math.random() * (json.length - 1));
+      let id = json[randomItem].ID;
+      
 
       item.innerHTML +=
         `<div class="items">` +
@@ -33,22 +35,14 @@ fetch("./products.json")
         `<span id="price">` +
         json[randomItem].PRICE_WITH_VAT +
         `<span id="dph"> €</span></span>` +
-        `<button id="productDetail" onclick="productDetail(`+ randomItem +`)">Detail</button>`;
-        
+        `<a id="productDetail" href= "product.html?id=${json[randomItem].ID}">Detail</a>`;
+               
     }
   });
 
-  function productDetail(randomItem){
-    //let product = window.location.href = "product.html"
-    //let productInfo = product.getElementById("productWrapper");
+  
+    
 
-    fetch("./products.json")
-   .then((response) => response.json())
-   .then((json) => console.log(json[randomItem].ID)
-     
+    
    
-    
-    
-    )
-   }
   
