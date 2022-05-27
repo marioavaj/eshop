@@ -48,17 +48,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
-#wrapper {
+.productsWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
   margin: 41.5em 5% 0 5%;
 }
 
-#wrapper img {
+.productsWrapper img {
   width: 100%;
 }
-#wrapper img:hover {
+.productsWrapper img:hover {
   transform: scale(1.5);
   transition: 1s ease;
   z-index: -1;
@@ -185,7 +185,7 @@ h1 {
   padding: 0.5em;
   margin: 0.2em;
   height: 10 0%;
-  border-top: 3px solid red;
+  border-top: 10px solid gold;
   box-shadow: 10px 10px rgb(0, 0, 0);
   clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%);
 }
@@ -205,7 +205,7 @@ h1 {
     "IMAGE_SRC PRICE_WITH_VAT "
     "IMAGE_SRC BASKET"
     "DESCRIPTION DESCRIPTION ";
-    border-top:3px solid rgb(255, 3, 3);
+    border-top:10px solid gold;
     padding: 1em;
     width: 60%;
     top: 10em;
@@ -260,7 +260,7 @@ font-weight: 600;
   grid-area: DESCRIPTION;
   padding-top: 1em;
   padding-bottom: 1em;
-  border-top:3px solid rgb(255, 3, 3);
+  border-top:3px solid rgb(94, 94, 94);
 
 }
 
