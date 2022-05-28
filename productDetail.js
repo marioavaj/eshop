@@ -13,7 +13,7 @@ fetch("./products.json")
         var priceWithoutVat = parseFloat(json[i]["PRICE"]);
 
         var freeDelivery = `Nad 30 € doprava zdarma`;
-        if (price > 29) {
+        if (price >= 30) {
           freeDelivery = `Doprava zdarma`;
         }
 

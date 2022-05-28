@@ -343,7 +343,8 @@ border: 2px solid black;
 input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
   height: 2em;
-  background-color: gold;
+  width: 2em;
+    
 }
 
 #DESCRIPTION{
