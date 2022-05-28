@@ -232,13 +232,14 @@ h1 {
    margin-right: auto;
     display: grid;
   grid-template-areas:
-    "IMAGE_SRC PRODUCT_NAME "
-    "IMAGE_SRC ID "
-    "IMAGE_SRC AVAILABILITY "
-    "IMAGE_SRC PRICE "
-    "IMAGE_SRC PRICE_WITH_VAT "
-    "FIGURE BASKET"
-    "DESCRIPTION DESCRIPTION ";
+    "IMAGE_SRC PRODUCT_NAME PRODUCT_NAME PRODUCT_NAME "
+    "IMAGE_SRC ID ID ID"
+    "IMAGE_SRC AVAILABILITY AVAILABILITY AVAILABILITY "
+    "IMAGE_SRC PRICE PRICE PRICE "
+    "IMAGE_SRC PRICE_WITH_VAT PRICE_WITH_VAT PRICE_WITH_VAT "
+    "FIGURE BASKET INPUT INPUT"
+    "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ";
+    grid-template-columns: 1fr 0.2fr 0.7fr 0.1fr ;
     border-top:10px solid gold;
     padding: 1em;
     width: 60%;
@@ -326,6 +327,25 @@ font-weight: 600;
   
 }
 
+#INPUT{
+  grid-area: INPUT;
+  width: 5em;
+  height: 2em;
+  margin-left: 0.5em;
+  margin-top: 1.3em;
+  text-align: center;
+  border-color: rgb(212, 212, 212);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.3em;
+border: 2px solid black;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+  height: 2em;
+  background-color: gold;
+}
+
 #DESCRIPTION{
   grid-area: DESCRIPTION;
   padding-top: 1em;
@@ -359,6 +379,8 @@ font-weight: 600;
   background-color: gold;
   cursor: pointer;
 }
+
+
 
 #newsLatterFormularWrapper {
   display: grid;

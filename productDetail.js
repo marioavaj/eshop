@@ -4,27 +4,36 @@
     var FirstWord="";
     var FirstWorldFind='';
     
-    
+   
+
+
+
     
     fetch("./products.json")
     .then((response) => response.json())
     .then((json) => {
 
+         
+
+
+
+
+
       for (let i = 0; i < json.length; i++) {
        
         if(json[i]["ID"] == id){
             FirstWorldFind = json[i].PRODUCT_NAME.split(" ")[0];
-            let price = parseInt(json[i]["PRICE_WITH_VAT"]);
-            console.log(price)
-            let freeDelivery=`Nad 30 € doprava zdarma`;
+            var price = parseFloat(json[i]["PRICE_WITH_VAT"]);                 
+            
+            var freeDelivery=`Nad 30 € doprava zdarma`;
             if (price>29){
-                freeDelivery = `Doprava zdarma`;
-
-                
+                freeDelivery = `Doprava zdarma`;                
             } 
 
             let productDetailWrapper = document.getElementById("productDetailWrapper");
             
+
+                    
            productDetailWrapper.innerHTML=
            `<img id="IMAGE_SRC" src= ${json[i]["IMAGE_SRC"]} alt="">`+
            `<button id="freeDelivery"> ${freeDelivery}</button>`+
@@ -32,9 +41,28 @@
           `<div id="ID"><span class = "productdetailSpan">Kód: </span>${json[i]["ID"]}</div>`+
           `<p id="AVAILABILITY">${json[i]["AVAILABILITY"]}</p>`+
           `<div id="PRICE"><span class = "productdetailSpan">Cena bez DPH</span><br>${json[i]["PRICE"]} €</div>`+
-          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${json[i]["PRICE_WITH_VAT"]} €</span></div><br>`+
+          `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${price}</div><br>`+
           `<div id="DESCRIPTION"><span class = "productdetailSpan">Popis:</span><br> ${json[i]["DESCRIPTION"]}</div>`+
-          `<button id="BASKET">Vlož do košíka</button>`;}   
+          `<button id="BASKET">Vlož do košíka</button>`+
+          `<input id="INPUT" type="number" value="1" min="1" max="999">`;  
+          
+          
+          let element = document.getElementById("INPUT");
+            
+
+            element.addEventListener("click", () => {
+                let totalPrice = (price*element.value);
+                console.log(totalPrice);
+                document.querySelector(`#PRICE_WITH_VAT`).innerHTML=``;
+                document.querySelector(`#PRICE_WITH_VAT`).innerHTML=`<span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${totalPrice}`;
+                
+            });
+          
+            
+        }   
+
+
+        
 
     }
 });
