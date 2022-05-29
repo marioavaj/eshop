@@ -38,20 +38,29 @@ fetch("./products.json")
           `<input id="INPUT" type="number" value="1" min="1" max="999">`;
           
           document.getElementById("BASKET").onclick = function() {addToBasket()};
-          function addToBasket (){  
-              
-            
-            let ls = localStorage.getItem("basketInLocalStorage");
-            inBasket = JSON.parse(ls);
+          function addToBasket (){             
+            let thisID = json[i]["ID"];
+            let thisValue = parseInt(element.value);
+            console.log("stlacene " +thisID);
+            inBasket = JSON.parse(localStorage.getItem("basketInLocalStorage"));
             if(inBasket ==undefined){
-            inBasket = [];
-            console.log(inBasket);
-            }            
-
+            inBasket = [];    }  
             
+            const isInBasket = inBasket.find(isIn => {
+               return isIn.ID === thisID ;           
+            });
+            
+                console.log(isInBasket);
+
+                if(isInBasket !== undefined){
+                        element.value = parseInt(element.value) +thisValue;
+                }else element.value=thisValue;
+                
+            
+            /**"NAME": json[i]["PRODUCT_NAME"], */
                     
-                    inBasket.push({"ID": json[i]["ID"], "NAME": json[i]["PRODUCT_NAME"],  "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]  });
-                    console.log(inBasket);
+                    inBasket.push({"ID": json[i]["ID"],   "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]  });
+                    
                     
                     localStorage.setItem("basketInLocalStorage",JSON.stringify(inBasket) );
                     };
