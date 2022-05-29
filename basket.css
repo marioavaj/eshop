@@ -24,6 +24,7 @@
   grid-column: 1 / 5;
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 2em;
 }
 
 #continueShoppIngBaskeHead {
@@ -203,7 +204,7 @@
     background: linear-gradient(#89c403, #77a809);
   }
   
-  #continueOrderingButtonHead:hover {
+  #continueOrderingButtonFooter:hover {
     background: #528009;
     cursor: pointer;
   }
