@@ -39,31 +39,34 @@ fetch("./products.json")
           
           document.getElementById("BASKET").onclick = function() {addToBasket()};
           function addToBasket (){             
-            let thisID = json[i]["ID"];
-            let thisValue = parseInt(element.value);
-            console.log("stlacene " +thisID);
-            inBasket = JSON.parse(localStorage.getItem("basketInLocalStorage"));
+            
+                        
+            /**nacitanie produktu z LS. Ak tam nie je vytvori sa pole kosiku(inBAsket)  */
+           inBasket = JSON.parse(localStorage.getItem("basketInLocalStorage"));
             if(inBasket ==undefined){
-            inBasket = [];    }  
+            inBasket = [];    }   
             
+            /**hlada sa ci sa vkladany produkt nachadza v kosiku, ak sa nenachadza vrati undefined */
             const isInBasket = inBasket.find(isIn => {
-               return isIn.ID === thisID ;           
-            });
+                return isIn.ID === json[i]["ID"] ;           
+             });
             
-                console.log(isInBasket);
-
+            /**Ak je v kosiku(nieje undefined) vykona sa pripocitanie ks, inak sa novy produkt zapise do kosika */
+            console.log(json[i]["ID"]);
+            console.log(isInBasket);
                 if(isInBasket !== undefined){
-                        element.value = parseInt(element.value) +thisValue;
-                }else element.value=thisValue;
-                
-            
-            /**"NAME": json[i]["PRODUCT_NAME"], */
+                    document.getElementById("BASKET").innerHTML="už sa nachadza v Košíku"
+                   
+                }else{   
+                    inBasket.push({"ID": json[i]["ID"], "NAME": json[i]["PRODUCT_NAME"], "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]});                                    
                     
-                    inBasket.push({"ID": json[i]["ID"],   "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]  });
-                    
-                    
-                    localStorage.setItem("basketInLocalStorage",JSON.stringify(inBasket) );
-                    };
+           }
+           /**kosik sa yapise do ls */
+           localStorage.setItem("basketInLocalStorage",JSON.stringify(inBasket) );
+        
+        };
+
+
 
         var element = document.getElementById("INPUT");
 
