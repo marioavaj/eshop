@@ -52,13 +52,12 @@ fetch("./products.json")
              });
             
             /**Ak je v kosiku(nieje undefined) vykona (už sa nachadza v Košíku), inak sa novy produkt zapise do kosika */
-            console.log(json[i]["ID"]);
-            console.log(isInBasket);
+           
                 if(isInBasket !== undefined){
                     document.getElementById("BASKET").innerHTML="už je v košíku"
                    
                 }else{   
-                    inBasket.push({"ID": json[i]["ID"], "NAME": json[i]["PRODUCT_NAME"], "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]});                                    
+                    inBasket.push({"ID": json[i]["ID"], "NAME": json[i]["PRODUCT_NAME"], "IMG":json[i]["IMAGE_SRC"], "AMOUNT": element.value, "PRICE":json[i]["PRICE"], "PRICE_WITH_VAT": json[i]["PRICE_WITH_VAT"]});                                    
                     
            }
            /**kosik sa zapise do ls */
