@@ -208,3 +208,28 @@
     background: #528009;
     cursor: pointer;
   }
+
+  #deleteItemsFromBaset{
+    height: 3em;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #ff4242;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #ff0000;
+    text-shadow: inset 0px 1px 0px #ff1313;
+    background: linear-gradient(#ff0505, #cb0c0c);
+  }
+
+  #deleteItemsFromBaset:hover{
+    background: #8a0000;
+    cursor: pointer;
+
+  }
