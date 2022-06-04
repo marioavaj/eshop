@@ -63,7 +63,7 @@
   border: 1px solid gray;
 }
 
-.cancelItemFromBasket {
+.deleteItemFromBasket {
   display: flex;
   margin-top: auto;
   margin-bottom: auto;

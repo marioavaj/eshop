@@ -3,7 +3,7 @@ var lsData = localStorage.getItem("basketInLocalStorage");
 var itemsInBasket = JSON.parse(lsData);
 var totalPrice=0;
 
-/**Vypise polozky osika z ls */
+/**Vypise polozky z kosika z ls */
 for (i = 0; i < itemsInBasket.length; i++) {
     
   let sum =
@@ -13,7 +13,7 @@ for (i = 0; i < itemsInBasket.length; i++) {
     localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
     totalPrice = totalPrice+sum;
   itemInBasket.innerHTML += `
-<input class="cancelItemFromBasket" type="checkbox">    
+<button class="deleteItemFromBasket">X</button>    
             <img class="imageInBasket" src=${itemsInBasket[i]["IMG"]} alt="">
             <div class="NameItemInBasket">${itemsInBasket[i]["NAME"]}</div>
             <input class="increaseCountBasket" type="number" value="${itemsInBasket[i]["AMOUNT"]}" min="1" max="999">
@@ -27,9 +27,9 @@ for (i = 0; i < itemsInBasket.length; i++) {
 
 
 /** zmena ks v kosiku */
-let amount = document.querySelector("#ItemBasketWrapperGrid");
+let parent = document.querySelector("#ItemBasketWrapperGrid");
 
-amount.addEventListener("input", (e) => {
+parent.addEventListener("input", (e) => {
   let amounts = document.querySelectorAll(
     `#ItemBasketWrapperGrid > .increaseCountBasket`
   );
@@ -37,16 +37,55 @@ amount.addEventListener("input", (e) => {
     `#ItemBasketWrapperGrid > .sumInRowBasket`
   );
 
+  
   let indexOfItem = [].indexOf.call(amounts, e.target); //cislo indexu polozky v kosiku
-  let amountChanged = parseInt(amounts[indexOfItem].value); //pocet ks v kosiku
-  let newSum = amountChanged * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
+  var amountChanged = amounts[indexOfItem].value; //pocet ks v kosiku
+  console.log(amountChanged);
+
+  if(amountChanged.value = 0){
+    amountChanged.value=1;   
+  }
+
+  let newSum = parseInt(amountChanged) * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
 
   amounts[indexOfItem].value = amountChanged;
+  
   newSumChange[indexOfItem].innerText = newSum.toFixed(2);
   itemsInBasket[indexOfItem]["AMOUNT"] = amountChanged;
 
   localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
+
+  
 });
+/**Vymazanie jednej polozky z kosika */
+
+    var nodes = document.querySelectorAll('.deleteItemFromBasket');
+
+for (let i = 0; i < nodes.length; i++) {
+   nodes[i].addEventListener('click', function(index) {
+             var indexOfDeleteItem = index;
+             console.log(indexOfDeleteItem);
+
+
+             
+   }.bind(this, i));
+}
+        
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+
 
 /** Celkova cena objednavky 
 
@@ -70,8 +109,8 @@ priceWithVat.innerText =
             </div>`
 
         })
-
-        */
+*/
+        
 
 /** vymazanie jednej polozky z kosika */
 
