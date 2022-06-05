@@ -67,7 +67,7 @@ fetch("./products.json")
         var element = document.getElementById("INPUT");
 
         element.addEventListener("input", () => {
-          if (element.value == "") {
+          if (element.value == "" || element.value == 0) {
             element.value = 1;
           }
 

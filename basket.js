@@ -16,24 +16,33 @@ for (i = 0; i < itemsInBasket.length; i++) {
 <button class="deleteItemFromBasket">X</button>    
             <img class="imageInBasket" src=${itemsInBasket[i]["IMG"]} alt="">
             <div class="NameItemInBasket">${itemsInBasket[i]["NAME"]}</div>
-            <input class="increaseCountBasket" type="number" value="${itemsInBasket[i]["AMOUNT"]}" min="1" max="999">
+            <input onclick = "valueChecker()" class="increaseCountBasket" type="number" value="${itemsInBasket[i]["AMOUNT"]}" min="1" max="999">
             <div class="pricewithoutBasket">${itemsInBasket[i]["PRICE"]}</div>
             <div class="pricewithBasket">${itemsInBasket[i]["PRICE_WITH_VAT"]}</div>
             <div class="sumInRowBasket">${sum}</div>`;
 }
 
+function valueChecker(){
+    let valueCheck =  document.querySelectorAll(".increaseCountBasket").value
 
-
-
+    if (valueCheck == "" || valueCheck == 0) {
+        element.value = 1;
+      }
+            
+    }
 
 /** zmena ks v kosiku */
 let parent = document.querySelector("#ItemBasketWrapperGrid");
 
 parent.addEventListener("input", (e) => {
+
+    
+
   let amounts = document.querySelectorAll(
     `#ItemBasketWrapperGrid > .increaseCountBasket`
   );
-  let newSumChange = document.querySelectorAll(
+
+ let newSumChange = document.querySelectorAll(
     `#ItemBasketWrapperGrid > .sumInRowBasket`
   );
 
@@ -42,9 +51,8 @@ parent.addEventListener("input", (e) => {
   var amountChanged = amounts[indexOfItem].value; //pocet ks v kosiku
   console.log(amountChanged);
 
-  if(amountChanged.value = 0){
-    amountChanged.value=1;   
-  }
+  
+  
 
   let newSum = parseInt(amountChanged) * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
 
@@ -67,10 +75,10 @@ for (let i = 0; i < nodes.length; i++) {
              console.log(indexOfDeleteItem);
 
 
-             
+
    }.bind(this, i));
 }
-        
+
 
 
 
