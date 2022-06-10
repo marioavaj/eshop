@@ -2,7 +2,6 @@ var itemInBasket = document.querySelector("#ItemBasketWrapperGrid");
 var lsData = localStorage.getItem("basketInLocalStorage");
 var itemsInBasket = JSON.parse(lsData);
 
-
 var totalSum;
 var priceWithVat = document.querySelector("#totalPriceInBasket");
 var totalSumWithoutVAT;
@@ -12,8 +11,7 @@ var vat;
 /**Vypise polozky z kosika z ls */
 for (i = 0; i < itemsInBasket.length; i ++) {
 
-    let sum = parseInt(itemsInBasket[i]["AMOUNT"]) * parseFloat(itemsInBasket[i]["PRICE_WITH_VAT"]).toFixed(2);
-    
+    let sum = Math.round((parseInt(itemsInBasket[i]["AMOUNT"]) * parseFloat(itemsInBasket[i]["PRICE_WITH_VAT"])) * 100) / 100;
     localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
     
     itemInBasket.innerHTML += `<div class = "item">
@@ -46,8 +44,8 @@ for (i = 0; i < itemsInBasket.length; i ++) {
             }
             console.log(totalSum)
         
-            var totalSumWithoutVAT = (totalSum/1.2).toFixed(2);
-            vat = (totalSum - totalSumWithoutVAT).toFixed(2);
+            var totalSumWithoutVAT = Math.round((totalSum/1.2) * 100) / 100;
+            vat = Math.round((totalSum - totalSumWithoutVAT) * 100) / 100;
                
             localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
             localStorage.setItem("totalSum", JSON.stringify(totalSum));
@@ -106,8 +104,10 @@ parent.addEventListener("input", (e) => {
     }
     console.log(totalSum)
 
-    var totalSumWithoutVAT = (totalSum/1.2).toFixed(2);
-    vat = (totalSum - totalSumWithoutVAT).toFixed(2);
+    
+
+    var totalSumWithoutVAT = Math.round((totalSum/1.2) * 100) / 100;
+            vat = Math.round((totalSum - totalSumWithoutVAT) * 100) / 100;
        
     localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
     localStorage.setItem("totalSum", JSON.stringify(totalSum));
@@ -164,7 +164,7 @@ function deleteItemFromBasket(deleteItem) {
             priceWithVat.innerHTML = 
 `
                 <div id="textWithoutVAT">Celkom bez DPH</div>
-                <div id="totalPriceInBasketWithoutVAT">${totalSum/1.2}</div>
+                <div id="totalPriceInBasketWithoutVAT">${Math.round((totalSum/1.2) * 10) / 10}</div>
                 <div id="textVAT">Z toho DPH</div>
                 <div id="totalPriceVAT">${totalSum*0.2}</div>
                 <div id="textWithVAT">Celkom s DPH</div>
