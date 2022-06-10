@@ -34,13 +34,18 @@ fetch("./products.json")
           `<div id="PRICE"><span class = "productdetailSpan">Cena bez DPH</span><br>${json[i]["PRICE"]} €</div>` +
           `<div id="PRICE_WITH_VAT"><span class = "productdetailSpan" style="font-size: 0.4em;" >Cena s DPH</span><br>${price} €</div><br>` +
           `<div id="DESCRIPTION"><span class = "productdetailSpan">Popis:</span><br> ${json[i]["DESCRIPTION"]}</div>` +
-          `<button id="BASKET" onclick="">Vlož do košíka</button>` +
+          `<button id="BASKET" onclick="productInBasketbuttonClick()">Vlož do košíka</button>` +
           `<input id="INPUT" type="number" value="1" min="1" max="999">`;
           
           document.getElementById("BASKET").onclick = function() {addToBasket()};
+
           function addToBasket (){             
             
-                        
+            
+            document.querySelector("#topNavBasketIcon").style.color = "red"
+          
+          
+                           
             /**nacitanie produktu z LS. Ak tam nie je vytvori sa pole kosiku(inBAsket)  */
            inBasket = JSON.parse(localStorage.getItem("basketInLocalStorage"));
             if(inBasket ==undefined){
@@ -144,6 +149,9 @@ fetch("./products.json")
       }
     }
   });
+
+
+  
 
   
 

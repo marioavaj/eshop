@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="basket.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">      
         <title>eshop</title>
   </head>
-  <body>
+  <body onload="productInBasket()">
 <div id="TopMenu">    
        <a href="index.html"><img id="logo" src="./img/logo-removebg-preview.png" alt="logo"></a> 
        
@@ -20,8 +21,8 @@
       <a class="topnavWithoutLogo" href="#about"><i class="fa-solid fa-address-card"></i> Kontakt</a>
             <input id="search" type="search" name="search" />
         <button id="find" class="fa-solid fa-magnifying-glass" onclick="find()"></button>
-      <a class="topnavWithoutLogo" href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
-      <a class="topnavWithoutLogo" href="#"><i class="fa-regular fa-user"></i></a>
+      <a id="topNavBasketIcon" class="topnavWithoutLogo" href="basket.html"><i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i></a>
+      <a class="topnavWithoutLogo" href="#"><i class="fa-regular fa-user" style="font-size: 30px;"></i></a>
       </div>
     </div>   
 
@@ -103,6 +104,7 @@
     </footer>
     <script src="./slideshow.js"></script>
     <script src="./importProduct.js"></script>
+    <script src="./basket.js"></script>
   </body>
 </html>
 
