@@ -151,6 +151,7 @@
     Grid-template-columns: 0.05fr 1fr 3.5fr 0.4fr 0.7fr 0.8fr 1fr;
     border: 1px solid gray;
     margin-top: 1em;
+    
 }
 
 #totalPriceInBasketWithoutVAT {
@@ -202,7 +203,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 0.9fr 0.6fr;
     margin-top: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 

@@ -1,7 +1,6 @@
 var itemInBasket = document.querySelector("#ItemBasketWrapperGrid");
 var lsData = localStorage.getItem("basketInLocalStorage");
 var itemsInBasket = JSON.parse(lsData);
-
 var totalSum;
 var priceWithVat = document.querySelector("#totalPriceInBasket");
 var totalSumWithoutVAT;
@@ -28,12 +27,12 @@ for (i = 0; i < itemsInBasket.length; i ++) {
         itemsInBasket[i]["AMOUNT"]
     }" min="1" max="999">
             <div class="pricewithoutBasket">${
-        itemsInBasket[i]["PRICE"]
+        itemsInBasket[i]["PRICE"] +" €"
     }</div>
             <div class="pricewithBasket">${
-        itemsInBasket[i]["PRICE_WITH_VAT"]
+        itemsInBasket[i]["PRICE_WITH_VAT"] +" €"
     }</div>
-            <div class="sumInRowBasket">${sum}</div> </div>`;
+            <div class="sumInRowBasket">${sum  + " €"}</div> </div>`;
 
             totalSum = 0;
             totalSumWithoutVAT=0;
@@ -54,11 +53,12 @@ for (i = 0; i < itemsInBasket.length; i ++) {
         priceWithVat.innerHTML = 
         `
                         <div id="textWithoutVAT">Celkom bez DPH</div>
-                        <div id="totalPriceInBasketWithoutVAT">${totalSumWithoutVAT}</div>
+                        <div id="totalPriceInBasketWithoutVAT">${totalSumWithoutVAT  +" €"}</div>
                         <div id="textVAT">Z toho DPH</div>
-                        <div id="totalPriceVAT">${vat}</div>
+                        <div id="totalPriceVAT">${vat  +" €"}</div>
                         <div id="textWithVAT">Celkom s DPH</div>
-                        <div id="totalPriceInBasketWithVAT">${totalSum}</div>
+                        <div id="totalPriceInBasketWithVAT">${totalSum   +" €" }</div>
+                        
                     `
 
 
@@ -116,11 +116,11 @@ parent.addEventListener("input", (e) => {
 priceWithVat.innerHTML = 
 `
                 <div id="textWithoutVAT">Celkom bez DPH</div>
-                <div id="totalPriceInBasketWithoutVAT">${totalSumWithoutVAT}</div>
+                <div id="totalPriceInBasketWithoutVAT">${totalSumWithoutVAT   +" €"}</div>
                 <div id="textVAT">Z toho DPH</div>
-                <div id="totalPriceVAT">${vat}</div>
+                <div id="totalPriceVAT">${vat   +" €"}</div>
                 <div id="textWithVAT">Celkom s DPH</div>
-                <div id="totalPriceInBasketWithVAT">${totalSum}</div>
+                <div id="totalPriceInBasketWithVAT">${totalSum   +" €"}</div>
             `
 
 
@@ -179,11 +179,11 @@ function deleteItemFromBasket(deleteItem) {
             priceWithVat.innerHTML = 
 `
                 <div id="textWithoutVAT">Celkom bez DPH</div>
-                <div id="totalPriceInBasketWithoutVAT">${Math.round((totalSum/1.2) * 100) / 100}</div>
+                <div id="totalPriceInBasketWithoutVAT">${Math.round((totalSum/1.2) * 100) / 100   +" €"}</div>
                 <div id="textVAT">Z toho DPH</div>
-                <div id="totalPriceVAT">${Math.round((totalSum*0.2) * 100) / 100}</div>
+                <div id="totalPriceVAT">${Math.round((totalSum*0.2) * 100) / 100   +" €"}</div>
                 <div id="textWithVAT">Celkom s DPH</div>
-                <div id="totalPriceInBasketWithVAT">${totalSum}</div>
+                <div id="totalPriceInBasketWithVAT">${totalSum   +" €"}</div>
             `
             
             itemsInBasket.splice(i, 1);
