@@ -140,12 +140,16 @@ function deleteItemsFromBasket() {
     let message = confirm("Naozaj chcete vymazať všetky položky z košíka?");
 
     if (message) {
-        itemsInBasket = [];
+        itemsInBasket = [];//vymaze polozky z ls
         localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
-        itemInBasket.innerHTML = "";
+        localStorage.setItem("totalSum", JSON.stringify(0));
+        itemInBasket.innerHTML = ""; //vymaze polozky z obrazovky
         document.getElementById("h1InBasket").innerHTML = "Váš košík je prázdny";
     }
 }
+
+
+/** vymazanie 1 polozky z kosika */
 
 function deleteItemFromBasket(deleteItem) {
     totalSum = localStorage.getItem("totalSum");
@@ -170,7 +174,6 @@ function deleteItemFromBasket(deleteItem) {
                 <div id="textWithVAT">Celkom s DPH</div>
                 <div id="totalPriceInBasketWithVAT">${totalSum}</div>
             `
-
 
             itemsInBasket.splice(i, 1);
 
