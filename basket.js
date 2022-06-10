@@ -10,10 +10,10 @@ for (i = 0; i < itemsInBasket.length; i ++) {
     itemsInBasket[i].TOTAL = sum;
     localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
     totalPrice = totalPrice + sum;
-    itemInBasket.innerHTML += `
-<button onclick="deleteItemFromBasket(${
+    itemInBasket.innerHTML += `<div class = "item">
+<img src="deleteIcon.jpg" onclick="deleteItemFromBasket(${
         itemsInBasket[i]["ID"]
-    })"   class="deleteItemFromBasket">X</button>    
+    })"   class="deleteItemFromBasket"></img>    
             <img class="imageInBasket" src=${
         itemsInBasket[i]["IMG"]
     } alt="">
@@ -29,7 +29,7 @@ for (i = 0; i < itemsInBasket.length; i ++) {
             <div class="pricewithBasket">${
         itemsInBasket[i]["PRICE_WITH_VAT"]
     }</div>
-            <div class="sumInRowBasket">${sum}</div>`;
+            <div class="sumInRowBasket">${sum}</div> </div>`;
 }
 
 function valueChecker() {
@@ -47,9 +47,9 @@ let parent = document.querySelector("#ItemBasketWrapperGrid");
 parent.addEventListener("input", (e) => {
 
 
-    let amounts = document.querySelectorAll(`#ItemBasketWrapperGrid > .increaseCountBasket`);
+    let amounts = document.querySelectorAll(`.item > .increaseCountBasket`);
 
-    let newSumChange = document.querySelectorAll(`#ItemBasketWrapperGrid > .sumInRowBasket`);
+    let newSumChange = document.querySelectorAll(`.item > .sumInRowBasket`);
 
 
     let indexOfItem = [].indexOf.call(amounts, e.target); // cislo indexu polozky v kosiku
@@ -83,26 +83,17 @@ for (let i = 0; i < nodes.length; i++) {
 
 
 /** Celkova cena objednavky 
-
 amount.addEventListener("onchange", (e)=> {
-
 let priceWithVat = document.querySelector("#totalPriceInBasketWithVAT");
 priceWithVat.innerText = 
 `<div id="totalPriceInBasketWrapper">
-
                 <div id="textWithoutVAT">Celkom bez DPH</div>
-
                 <div id="totalPriceInBasketWithoutVAT">10.00</div>
-
                 <div id="textVAT">Z toho DPH</div>
-
                 <div id="totalPriceVAT">2.00</div>
-
                 <div id="textWithVAT">Celkom s DPH</div>
-
                 <div id="totalPriceInBasketWithVAT">${totalPrice}</div>
             </div>`
-
         })
 */
 
@@ -120,4 +111,20 @@ function deleteItemsFromBasket() {
         itemInBasket.innerHTML = "";
         document.getElementById("h1InBasket").innerHTML = "Váš košík je prázdny";
     }
+}
+
+function deleteItemFromBasket(deleteItem) {
+    for (let i = 0; i < itemsInBasket.length; i++) {
+
+        if (deleteItem == itemsInBasket[i]["ID"]) {
+
+            itemsInBasket.splice(i, 1);
+
+            localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
+            itemInBasket.removeChild(itemInBasket.children[i]);
+        }
+
+
+    }
+
 }
