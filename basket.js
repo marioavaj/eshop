@@ -1,8 +1,8 @@
 var itemInBasket = document.querySelector("#ItemBasketWrapperGrid");
 var lsData = localStorage.getItem("basketInLocalStorage");
 var itemsInBasket = JSON.parse(lsData);
-var lsSum = localStorage.getItem("basketInLocalStorage");
-var itemsInBasket = JSON.parse(lsData);
+
+
 var totalSum;
 var priceWithVat = document.querySelector("#totalPriceInBasket");
 var totalSumWithoutVAT;
@@ -42,7 +42,7 @@ for (i = 0; i < itemsInBasket.length; i ++) {
             vat = 0;
         
             for(let i=0; i<itemsInBasket.length; i ++) {
-                totalSum = (totalSum+parseInt(itemsInBasket[i]["AMOUNT"])* itemsInBasket[i]["PRICE_WITH_VAT"]);
+                totalSum = Math.round((totalSum+parseInt(itemsInBasket[i]["AMOUNT"])* parseFloat(itemsInBasket[i]["PRICE_WITH_VAT"]))*100)/100 ;
             }
             console.log(totalSum)
         
@@ -92,16 +92,17 @@ parent.addEventListener("input", (e) => {
     let newSum = parseInt(amountChanged) * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
 
     amounts[indexOfItem].value = amountChanged;
-    newSumChange[indexOfItem].innerText = newSum.toFixed(2);
+    newSumChange[indexOfItem].innerText = Math.round(newSum*100)/100;
     itemsInBasket[indexOfItem]["AMOUNT"] = amountChanged;
-
+    
+    
     
     totalSum = 0;
     totalSumWithoutVAT=0;
     vat = 0;
 
     for(let i=0; i<itemsInBasket.length; i ++) {
-        totalSum = (totalSum+parseInt(amounts[i].value)* itemsInBasket[i]["PRICE_WITH_VAT"]);
+        totalSum = Math.round((totalSum+parseInt(amounts[i].value)* itemsInBasket[i]["PRICE_WITH_VAT"])*100)/100;
     }
     console.log(totalSum)
 
@@ -147,14 +148,28 @@ function deleteItemsFromBasket() {
 }
 
 function deleteItemFromBasket(deleteItem) {
+    totalSum = localStorage.getItem("totalSum");
+
+    console.log("Vstup do fukcie " + totalSum)
     for (let i = 0; i < itemsInBasket.length; i++) {
 
         if (deleteItem == itemsInBasket[i]["ID"]) {
 
-            totalSum = totalSum-parseInt(itemsInBasket[i].PRICE_WITH_VAT);
-            console.log(totalSum);
-            console.log(parseFloat(itemsInBasket[i].PRICE_WITH_VAT));
+            totalSum = Math.round((totalSum-(parseInt(itemsInBasket[i].AMOUNT) * parseFloat(itemsInBasket[i].PRICE_WITH_VAT))) * 100) / 100;
+
+            console.log("total po zruseni polozky " + totalSum);
+            console.log("cena zruenej polozky" + parseFloat(itemsInBasket[i].PRICE_WITH_VAT));
             localStorage.setItem("totalSum", JSON.stringify(totalSum));
+
+            priceWithVat.innerHTML = 
+`
+                <div id="textWithoutVAT">Celkom bez DPH</div>
+                <div id="totalPriceInBasketWithoutVAT">${totalSum/1.2}</div>
+                <div id="textVAT">Z toho DPH</div>
+                <div id="totalPriceVAT">${totalSum*0.2}</div>
+                <div id="textWithVAT">Celkom s DPH</div>
+                <div id="totalPriceInBasketWithVAT">${totalSum}</div>
+            `
 
 
             itemsInBasket.splice(i, 1);
