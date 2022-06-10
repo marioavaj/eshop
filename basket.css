@@ -108,8 +108,9 @@
 }
 
 .NameItemInBasket {
-    margin: auto ;
+    margin: auto 0 auto 1em;
     font-size: 1em;
+    
 }
 
 .increaseCountBasket {
@@ -144,7 +145,7 @@
 }
 
 
-#totalPriceInBasketWrapper {
+#totalPriceInBasket {
     display: grid;
     Grid-template-columns: 0.05fr 1fr 3.5fr 0.4fr 0.7fr 0.8fr 1fr;
     border: 1px solid gray;
