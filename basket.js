@@ -144,6 +144,17 @@ function deleteItemsFromBasket() {
         localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
         localStorage.setItem("totalSum", JSON.stringify(0));
         itemInBasket.innerHTML = ""; //vymaze polozky z obrazovky
+
+priceWithVat.innerHTML = 
+`
+                <div id="textWithoutVAT">Celkom bez DPH</div>
+                <div id="totalPriceInBasketWithoutVAT"></div>
+                <div id="textVAT">Z toho DPH</div>
+                <div id="totalPriceVAT"></div>
+                <div id="textWithVAT">Celkom s DPH</div>
+                <div id="totalPriceInBasketWithVAT"></div>
+            `
+
         document.getElementById("h1InBasket").innerHTML = "Váš košík je prázdny";
     }
 }
@@ -168,13 +179,13 @@ function deleteItemFromBasket(deleteItem) {
             priceWithVat.innerHTML = 
 `
                 <div id="textWithoutVAT">Celkom bez DPH</div>
-                <div id="totalPriceInBasketWithoutVAT">${Math.round((totalSum/1.2) * 10) / 10}</div>
+                <div id="totalPriceInBasketWithoutVAT">${Math.round((totalSum/1.2) * 100) / 100}</div>
                 <div id="textVAT">Z toho DPH</div>
-                <div id="totalPriceVAT">${totalSum*0.2}</div>
+                <div id="totalPriceVAT">${Math.round((totalSum*0.2) * 100) / 100}</div>
                 <div id="textWithVAT">Celkom s DPH</div>
                 <div id="totalPriceInBasketWithVAT">${totalSum}</div>
             `
-
+            
             itemsInBasket.splice(i, 1);
 
             localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
