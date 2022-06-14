@@ -56,7 +56,7 @@
             
             
 #ItemBasketWrapperGrid{
-    border: 1px solid black;
+    border: 1px solid silver;
 }
 
 
@@ -64,7 +64,8 @@
 #itemHeader{
     display: grid;
     grid-template-columns: 0.05fr 1fr 3.5fr 0.4fr 0.7fr 0.8fr 1fr;
-    border: 1px solid black;
+    border: 1px solid silver;
+    padding: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -149,7 +150,7 @@
 #totalPriceInBasket {
     display: grid;
     Grid-template-columns: 0.05fr 1fr 3.5fr 0.4fr 0.7fr 0.8fr 1fr;
-    border: 1px solid gray;
+    border: 1px solid silver;
     margin-top: 1em;
     
 }
@@ -260,5 +261,47 @@
 #deleteItemsFromBaset:hover {
     background: #8a0000;
     cursor: pointer;
-
 }
+
+#deliveryBasketWprapper{
+    display: grid;
+    grid-template-columns: 5fr 0.15fr 1fr 2fr 0.5fr;
+    
+    
+    
+}
+
+#kurierLabel{grid: 2;   }
+
+
+#kurier{grid: 3 ;}
+
+#postaLabel{grid: 7;}
+#posta{    grid: 6 ;}
+
+#zasielakovnaLabel{grid: 12 ;}
+#zasielakovna{    grid: 11 ;}
+
+#osobnyOdberLabel{grid: 16 ;}
+#osobnyOdber{    grid: 17 ;}
+
+#imgDelivery{
+    margin: 0;
+    grid-row-start: 1;
+  grid-row-end: 5;
+  width: 100%;
+}
+
+.deliveryStyle{
+    padding: 0.5em;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+   
+}
+
+
+
+
+

@@ -206,6 +206,5 @@ function productInBasket(){
         document.querySelector("#topNavBasketIcon").style.color = "red"
 }
 
-
 }
 
