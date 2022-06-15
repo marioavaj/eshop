@@ -142,8 +142,9 @@
 }
 
 .sumInRowBasket {
-    margin: auto;
-    text-align: center;
+    padding: 0.5em;
+    margin: auto 0.5em auto ;
+    text-align: right;
 }
 
 
@@ -157,23 +158,24 @@
 
 #totalPriceInBasketWithoutVAT {
     grid-column: 7;
-    margin: auto;
     padding: 0.5em;
-    text-align: center;
+    margin: auto 0.5em auto ;
+    text-align: right;
 }
 
 #totalPriceVAT {
     grid-column: 7;
-    margin: auto;
+    margin: auto 0.5em auto ;
+    text-align: right;
     padding: 0.5em;
-    text-align: center;
+    
 }
 
 #totalPriceInBasketWithVAT {
     grid-column: 7;
-    margin: auto;
     padding: 0.5em;
-    text-align: center;
+    margin: auto 0.5em auto ;
+    text-align: right;
 }
 
 
@@ -297,8 +299,15 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+      
+}
+
+.deliveryPriceStyle{
     
-   
+    padding: 0.5em;
+    margin: auto 0.5em auto ;
+    text-align: right;
+
 }
 
 
