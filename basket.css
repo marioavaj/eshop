@@ -1,3 +1,6 @@
+
+
+
 #basketWrapperGrid {
     z-index: 1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -48,7 +51,13 @@
     background: linear-gradient(#89c403, #77a809);
 }
 
-#continueOrderingButtonHead:hover {
+.continueOrderingButtonHead a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.continueOrderingButtonHead:hover {
     background: #528009;
     cursor: pointer;
 }
@@ -206,7 +215,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 0.9fr 0.6fr;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 
@@ -234,6 +243,11 @@
     box-shadow: inset 0 1px 0 0 #a4e271;
     text-shadow: inset 0 1px 0 #528009;
     background: linear-gradient(#89c403, #77a809);
+}
+#continueOrderingButtonFooter a{
+text-decoration: none;
+    color: white;
+
 }
 
 #continueOrderingButtonFooter:hover {
@@ -268,6 +282,7 @@
 #deliveryBasketWprapper{
     display: grid;
     grid-template-columns: 5fr 0.15fr 1fr 2fr 0.5fr;
+    background-color: #D7f5ff;
     
     
     
@@ -291,7 +306,7 @@
     margin: 0;
     grid-row-start: 1;
   grid-row-end: 5;
-  width: 100%;
+  width: 107%;
 }
 
 .deliveryStyle{
