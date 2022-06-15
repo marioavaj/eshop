@@ -77,9 +77,6 @@ function valueChecker() {
   }
 }
 
-/** zmena ks v kosiku */
-let parent = document.querySelector("#ItemBasketWrapperGrid");
-
 /**Pripocitanie ceny dopravy */
 var previous;
 function getValue(radio) {
@@ -87,14 +84,13 @@ let totalSumElement = document.getElementById("totalPriceInBasketWithVAT")
 let totalPriceVATElement = document.getElementById("totalPriceVAT")
 let totalPriceInBasketWithoutVATElement = document.getElementById("totalPriceInBasketWithoutVAT")
 
-
   if(previous == undefined){
     previous = 0;
   }
-  console.log(previous);
+  
 totalSum = totalSum+parseInt(radio.value)-previous;
 localStorage.setItem("totalSum", JSON.stringify(totalSum));
-totalSumElement.innerText = totalSum;
+totalSumElement.innerText = Math.round(totalSum  * 100) / 100 + " €";
 totalPriceVATElement.innerText = Math.round(totalSum * 0.2 * 100) / 100 + " €";
 totalPriceInBasketWithoutVATElement.innerText = Math.round((totalSum / 1.2) * 100) / 100 + " €";
 console.log(totalSum)
@@ -103,6 +99,9 @@ previous = parseInt(radio.value);
 
 
 }
+
+/** zmena ks v kosiku */
+let parent = document.querySelector("#ItemBasketWrapperGrid");
 
 parent.addEventListener("input", (e) => {
   let amounts = document.querySelectorAll(`.item > .increaseCountBasket`);
