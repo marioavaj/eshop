@@ -218,14 +218,12 @@ function deleteItemFromBasket(deleteItem) {
     }
   }
 }
-
-
-
 function productInBasket(){
 
    if(itemsInBasket.length>0){
     
-        document.querySelector("#topNavBasketIcon").style.color = "red"
+        document.querySelector("#topNavBasketIcon").style.color = "red";
+        
 }
 
 }
