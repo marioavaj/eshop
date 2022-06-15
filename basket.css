@@ -282,8 +282,9 @@ text-decoration: none;
 #deliveryBasketWprapper{
     display: grid;
     grid-template-columns: 5fr 0.15fr 1fr 2fr 0.5fr;
-    background-color: #D7f5ff;
-    
+   /* background-color: #D7f5ff;*/
+   background: rgb(215,245,255);
+background: linear-gradient(180deg, rgba(215,245,255,0.529) 22%, rgba(89,207,54,0.3) 34%, rgba(137, 120, 104, 0.3) 94%, rgba(136,119,103,0.4) 99%);
     
     
 }
