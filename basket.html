@@ -50,31 +50,31 @@
 
             </div>            
         
-             <div id="deliveryBasketWprapper">
+             <form id="deliveryBasketWprapper">
                 <img id="imgDelivery" src="./img/delivery.png" style = "margin-top: 1em;" alt="">
 
                 
-                <input type="radio" class ="deliveryStyle" name="kurier" id="kurier">
-                <label for="kurier" class ="deliveryStyle" id="kurierLabel">Kuriér</label>
+                <input onchange="getValue(this)" o value="5" type="radio" class ="deliveryStyle" name="delivery" id="kurier">
+                <label for="delivery" class ="deliveryStyle" id="kurierLabel">Kuriér</label>
                 <div class ="deliveryStyle">Dodacia doba 1 pracovný deň </div>
-                <div class ="deliveryStyle">5 € </div>
+                <div class ="deliveryStyle">5 €</div>
                 
-                <input type="radio" class ="deliveryStyle" name="SlovenskaPosta" id="posta">
-                <label for="SlovenskaPosta" class ="deliveryStyle" id="postaLabel">Slovenká Pošta</label>
+                <input onchange="getValue(this)" value="4" type="radio" class ="deliveryStyle" name="delivery" id="posta">
+                <label for="delivery" class ="deliveryStyle" id="postaLabel">Slovenká Pošta</label>
                 <div class ="deliveryStyle">Dodacia doba 3 pracovné dni </div>
-                <div class ="deliveryStyle">5 € </div>
+                <div class ="deliveryStyle">4 € </div>
                 
-                <input type="radio" class ="deliveryStyle" name="zasielakovna" id="zasielakovna">
-                <label for="zasielakovna" class ="deliveryStyle" id ="zasielakovnaLabel">Zásielkovňa</label>
+                <input onchange="getValue(this)" value="2" type="radio" class ="deliveryStyle" name="delivery" id="zasielakovna">
+                <label for="delivery" class ="deliveryStyle" id ="zasielakovnaLabel">Zásielkovňa</label>
                 <div class ="deliveryStyle">Vyzdvihnutie na odbernom mieste </div>
-                <div class ="deliveryStyle">5 € </div>
+                <div class ="deliveryStyle">2 € </div>
                 
-                <input type="radio" class ="deliveryStyle" name="OsobnyOdber" id="OsobnyOdber">
-                <label for="OsobnyOdber" class ="deliveryStyle" id="osobnyOdberLabel">Osobný odber</label>
+                <input onchange="getValue(this)" value="1" type="radio" class ="deliveryStyle" name="delivery" id="OsobnyOdber">
+                <label for="delivery" class ="deliveryStyle" id="osobnyOdberLabel">Osobný odber</label>
                 <div class ="deliveryStyle">Odber v mieste sídla </div>
-                <div class ="deliveryStyle">5 € </div>
+                <div class ="deliveryStyle">1 € </div>
 
-             </div>
+             </form>
 
 
 

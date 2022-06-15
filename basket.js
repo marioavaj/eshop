@@ -80,15 +80,39 @@ function valueChecker() {
 /** zmena ks v kosiku */
 let parent = document.querySelector("#ItemBasketWrapperGrid");
 
+/**Pripocitanie ceny dopravy */
+var previous;
+function getValue(radio) {
+let totalSumElement = document.getElementById("totalPriceInBasketWithVAT") 
+let totalPriceVATElement = document.getElementById("totalPriceVAT")
+let totalPriceInBasketWithoutVATElement = document.getElementById("totalPriceInBasketWithoutVAT")
+
+
+  if(previous == undefined){
+    previous = 0;
+  }
+  console.log(previous);
+totalSum = totalSum+parseInt(radio.value)-previous;
+localStorage.setItem("totalSum", JSON.stringify(totalSum));
+totalSumElement.innerText = totalSum;
+totalPriceVATElement.innerText = Math.round(totalSum * 0.2 * 100) / 100 + " €";
+totalPriceInBasketWithoutVATElement.innerText = Math.round((totalSum / 1.2) * 100) / 100 + " €";
+console.log(totalSum)
+previous = parseInt(radio.value);
+
+
+
+}
+
 parent.addEventListener("input", (e) => {
   let amounts = document.querySelectorAll(`.item > .increaseCountBasket`);
   let newSumChange = document.querySelectorAll(`.item > .sumInRowBasket`);
+  
 
   let indexOfItem = [].indexOf.call(amounts, e.target); // cislo indexu polozky v kosiku
   var amountChanged = amounts[indexOfItem].value; // pocet ks v kosiku
 
-  console.log(amountChanged);
-
+  
   let newSum =
     parseInt(amountChanged) * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
 
@@ -108,8 +132,7 @@ parent.addEventListener("input", (e) => {
           100
       ) / 100;
   }
-  console.log(totalSum);
-
+  
   var totalSumWithoutVAT = Math.round((totalSum / 1.2) * 100) / 100;
   vat = Math.round((totalSum - totalSumWithoutVAT) * 100) / 100;
 
