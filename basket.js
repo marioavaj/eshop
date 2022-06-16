@@ -16,6 +16,7 @@ for (i = 0; i < itemsInBasket.length; i++) {
     ) / 100;
   localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
 
+
   itemInBasket.innerHTML += `<div class = "item">
 <img src="deleteIcon.jpg" onclick="deleteItemFromBasket(${
     itemsInBasket[i]["ID"]
@@ -79,17 +80,16 @@ function valueChecker() {
 
 /**Pripocitanie ceny dopravy */
 var previous;
+var deliveryPrice;
 function getValue(radio) {
   let totalSumElement = document.getElementById("totalPriceInBasketWithVAT");
   let totalPriceVATElement = document.getElementById("totalPriceVAT");
   let totalPriceInBasketWithoutVATElement = document.getElementById(
     "totalPriceInBasketWithoutVAT"
   );
-
   if (previous == undefined) {
     previous = 0;
   }
-
   totalSum = totalSum + parseInt(radio.value) - previous;
   localStorage.setItem("totalSum", JSON.stringify(totalSum));
   totalSumElement.innerText = Math.round(totalSum * 100) / 100 + " €";
@@ -99,6 +99,8 @@ function getValue(radio) {
     Math.round((totalSum / 1.2) * 100) / 100 + " €";
   console.log(totalSum);
   previous = parseInt(radio.value);
+  deliveryPrice = radio.value;
+  return deliveryPrice;
 }
 
 /** zmena ks v kosiku */
@@ -221,19 +223,20 @@ function productInBasket() {
   }
 }
 
+
 /**tlacidlo odosli objednavku */
 function placeOrder() {
-  /** validacia formularu */
+
+/** validacia formularu */
 
   let name = document.formInBasket.firstname.value;
   let email = document.formInBasket.email.value;
   let address = document.formInBasket.address.value;
   let city = document.formInBasket.city.value;
-  let zip = document.formInBasket.city.value;
-  let state = document.formInBasket.city.value;
+  let zip = document.formInBasket.zip.value;
+  let state = document.formInBasket.state.value;
 
-  console.log(name, email);
-  if (name == null || name == "") {
+   if (name == null || name == "") {
     alert("Vyplňte meno");
     return false;
   } else if (email == null || email == "") {
@@ -253,6 +256,9 @@ function placeOrder() {
     return false;
   }
 
+  /** ulozenie dat z formularu */
+  const customer = { name: name, address: address, city: city, ZIP: zip, email: email, state: state };
+ 
   /** Cislo objednavky */
   let orderID = localStorage.getItem("orderID");
   if (orderID == undefined) {
@@ -261,11 +267,15 @@ function placeOrder() {
   orderID = parseInt(orderID) + 1;
   localStorage.setItem("orderID", JSON.stringify(orderID));
 
-  /** */
-
+  /** odoslanie objednavky do LocalSorage */
   const order = [];
+  order.push({orderID: orderID});
+  order.push(customer);
+  order.push({DeliveryPrice: deliveryPrice});
+  order.push(itemsInBasket);
+  localStorage.setItem(orderID, JSON.stringify(order));
+  
+ /**sprava o odoslani objednavky */
+ alert("Vašu objenávku sme zaevidovali pod číslom " + orderID);
 
-  const customer = { name: "", address: "", city: "", ZIP: "", email: "" };
-
-  const itemsOrder = localStorage.getItem("basketInLocalStorage");
 }
