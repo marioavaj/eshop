@@ -226,7 +226,7 @@ function productInBasket() {
 /**tlacidlo odosli objednavku */
 function placeOrder() {
 
-/** validacia formularu */
+/** validacia formularov(dorava+adresa) */
 
   let name = document.formInBasket.firstname.value;
   let email = document.formInBasket.email.value;
@@ -235,15 +235,17 @@ function placeOrder() {
   let zip = document.formInBasket.zip.value;
   let state = document.formInBasket.state.value;
 
-  if(document.getElementById("kurier").checked && document.getElementById("posta").checked &&
-  document.getElementById("zasielkovna").checked && document.getElementById("OsobnyOdber").checked){
+  
+/**Validacia zadania dopravy */
+  if(!(document.getElementById("kurier").checked || document.getElementById("posta").checked ||
+  document.getElementById("zasielkovna").checked || document.getElementById("OsobnyOdber").checked)){
       alert("Zvolte dopravu");
       return;
   }
    
   
 
-  
+  /**validacia vyplnenia formularu */
 
    if (name == null || name == "") {
     alert("Vyplňte meno");
