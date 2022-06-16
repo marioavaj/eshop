@@ -21,7 +21,9 @@ body {
 }
 
 #logo {
-  width: 250px;
+  width: 240px;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
 }
 
 .topnavWithoutLogo {

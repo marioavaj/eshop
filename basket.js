@@ -80,24 +80,25 @@ function valueChecker() {
 /**Pripocitanie ceny dopravy */
 var previous;
 function getValue(radio) {
-let totalSumElement = document.getElementById("totalPriceInBasketWithVAT") 
-let totalPriceVATElement = document.getElementById("totalPriceVAT")
-let totalPriceInBasketWithoutVATElement = document.getElementById("totalPriceInBasketWithoutVAT")
+  let totalSumElement = document.getElementById("totalPriceInBasketWithVAT");
+  let totalPriceVATElement = document.getElementById("totalPriceVAT");
+  let totalPriceInBasketWithoutVATElement = document.getElementById(
+    "totalPriceInBasketWithoutVAT"
+  );
 
-  if(previous == undefined){
+  if (previous == undefined) {
     previous = 0;
   }
-  
-totalSum = totalSum+parseInt(radio.value)-previous;
-localStorage.setItem("totalSum", JSON.stringify(totalSum));
-totalSumElement.innerText = Math.round(totalSum  * 100) / 100 + " €";
-totalPriceVATElement.innerText = Math.round(totalSum * 0.2 * 100) / 100 + " €";
-totalPriceInBasketWithoutVATElement.innerText = Math.round((totalSum / 1.2) * 100) / 100 + " €";
-console.log(totalSum)
-previous = parseInt(radio.value);
 
-
-
+  totalSum = totalSum + parseInt(radio.value) - previous;
+  localStorage.setItem("totalSum", JSON.stringify(totalSum));
+  totalSumElement.innerText = Math.round(totalSum * 100) / 100 + " €";
+  totalPriceVATElement.innerText =
+    Math.round(totalSum * 0.2 * 100) / 100 + " €";
+  totalPriceInBasketWithoutVATElement.innerText =
+    Math.round((totalSum / 1.2) * 100) / 100 + " €";
+  console.log(totalSum);
+  previous = parseInt(radio.value);
 }
 
 /** zmena ks v kosiku */
@@ -106,12 +107,10 @@ let parent = document.querySelector("#ItemBasketWrapperGrid");
 parent.addEventListener("input", (e) => {
   let amounts = document.querySelectorAll(`.item > .increaseCountBasket`);
   let newSumChange = document.querySelectorAll(`.item > .sumInRowBasket`);
-  
 
   let indexOfItem = [].indexOf.call(amounts, e.target); // cislo indexu polozky v kosiku
   var amountChanged = amounts[indexOfItem].value; // pocet ks v kosiku
 
-  
   let newSum =
     parseInt(amountChanged) * itemsInBasket[indexOfItem]["PRICE_WITH_VAT"];
 
@@ -131,7 +130,7 @@ parent.addEventListener("input", (e) => {
           100
       ) / 100;
   }
-  
+
   var totalSumWithoutVAT = Math.round((totalSum / 1.2) * 100) / 100;
   vat = Math.round((totalSum - totalSumWithoutVAT) * 100) / 100;
 
@@ -155,8 +154,6 @@ function deleteItemsFromBasket() {
   let message = confirm("Naozaj chcete vymazať všetky položky z košíka?");
 
   if (message) {
-
-    
     itemsInBasket = []; //vymaze polozky z ls
     localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
     localStorage.setItem("totalSum", JSON.stringify(0));
@@ -169,7 +166,7 @@ function deleteItemsFromBasket() {
                 <div id="totalPriceVAT"></div>
                 <div id="textWithVAT">Celkom s DPH</div>
                 <div id="totalPriceInBasketWithVAT"></div>
-            `;    
+            `;
   }
 }
 
@@ -218,13 +215,57 @@ function deleteItemFromBasket(deleteItem) {
     }
   }
 }
-function productInBasket(){
-
-   if(itemsInBasket.length>0){
-    
-        document.querySelector("#topNavBasketIcon").style.color = "red";
-        
+function productInBasket() {
+  if (itemsInBasket.length > 0) {
+    document.querySelector("#topNavBasketIcon").style.color = "red";
+  }
 }
 
-}
+/**tlacidlo odosli objednavku */
+function placeOrder() {
+  /** validacia formularu */
 
+  let name = document.formInBasket.firstname.value;
+  let email = document.formInBasket.email.value;
+  let address = document.formInBasket.address.value;
+  let city = document.formInBasket.city.value;
+  let zip = document.formInBasket.city.value;
+  let state = document.formInBasket.city.value;
+
+  console.log(name, email);
+  if (name == null || name == "") {
+    alert("Vyplňte meno");
+    return false;
+  } else if (email == null || email == "") {
+    alert("Vyplňte email");
+    return false;
+  } else if (address == null || address == "") {
+    alert("Vyplňte adresu");
+    return false;
+  } else if (city == null || city == "") {
+    alert("Vyplňte mesto");
+    return false;
+  } else if (zip == null || zip == "") {
+    alert("Vyplňte PSČ");
+    return false;
+  } else if (state == null || state == "") {
+    alert("Vyplňte štát");
+    return false;
+  }
+
+  /** Cislo objednavky */
+  let orderID = localStorage.getItem("orderID");
+  if (orderID == undefined) {
+    orderID = 220000;
+  }
+  orderID = parseInt(orderID) + 1;
+  localStorage.setItem("orderID", JSON.stringify(orderID));
+
+  /** */
+
+  const order = [];
+
+  const customer = { name: "", address: "", city: "", ZIP: "", email: "" };
+
+  const itemsOrder = localStorage.getItem("basketInLocalStorage");
+}
