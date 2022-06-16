@@ -223,7 +223,6 @@ function productInBasket() {
   }
 }
 
-
 /**tlacidlo odosli objednavku */
 function placeOrder() {
 
@@ -235,6 +234,16 @@ function placeOrder() {
   let city = document.formInBasket.city.value;
   let zip = document.formInBasket.zip.value;
   let state = document.formInBasket.state.value;
+
+  if(document.getElementById("kurier").checked && document.getElementById("posta").checked &&
+  document.getElementById("zasielkovna").checked && document.getElementById("OsobnyOdber").checked){
+      alert("Zvolte dopravu");
+      return;
+  }
+   
+  
+
+  
 
    if (name == null || name == "") {
     alert("Vyplňte meno");
@@ -277,5 +286,9 @@ function placeOrder() {
   
  /**sprava o odoslani objednavky */
  alert("Vašu objenávku sme zaevidovali pod číslom " + orderID);
+
+/**Vymazanie kosika */
+
+
 
 }
