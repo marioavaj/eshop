@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="basket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>AutoDoplnky - košík</title>
+  </head>
+
+  <body onload="productInBasket()">
+
+    <div id="TopMenu">
+      <a href="index.html"
+        ><img id="logo" src="./img/logo-removebg-preview.png" alt="logo"
+      /></a>
+
+      <div id="navFlexRight">
+        <a class="topnavWithoutLogo" href="index.html"
+          ><i class="fa-solid fa-house"></i> Domov</a
+        >
+        <a class="topnavWithoutLogo" href="https://google.sk"
+          ><i class="fa-solid fa-people-group"></i> Kto sme</a
+        >
+        <a class="topnavWithoutLogo" href="#contact"
+          ><i class="fa-regular fa-credit-card"></i> Ako nakupovať</a
+        >
+        <a class="topnavWithoutLogo" href="#about"
+          ><i class="fa-solid fa-address-card"></i> Kontakt</a
+        >
+        <input id="search" type="search" name="search" />
+        <button
+          id="find"
+          class="fa-solid fa-magnifying-glass"
+          onclick="find()"
+        ></button>
+        <a
+          id="topNavBasketIcon"
+          class="active topnavWithoutLogo"
+          href="basket.html"
+          ><i class="fa-solid fa-cart-shopping" style="font-size: 30px"></i
+        ></a>
+        <a class="topnavWithoutLogo" href="#"
+          ><i class="fa-regular fa-user" style="font-size: 30px"></i
+        ></a>
+      </div>
+    </div>
+
+        <div id="emptyBasketWrapperGrid">
+        <div id="emptyBasketWrapperHeader">
+          <h1 id="h1InEmptyBasket">😃 Ďakujeme za objednávku 😃</h1>
+          
+          <img id="emptyBasketImg" src="/img/giphy.gif"   alt="">
+        </div>
+        </div>
+
+     <footer>
+      <div class="foot">
+        <div class="foot1">
+          <p>Kde nás nájdete</p>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="259"
+                height="191"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=london&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://www.whatismyip-address.com"></a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 191px;
+                  width: 240px;
+                }</style
+              ><a href="https://www.embedgooglemap.net">google map for web</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 191px;
+                  width: 240px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div class="foot2">
+          <br />
+          <h3>More info</h3>
+          <ul>
+            <li>ORA Our Story Why ORA?</li>
+            <li>Accreditations</li>
+            <li>For Parents</li>
+            <li>or Educators</li>
+            <li>Our Team</li>
+            <li>Articles</li>
+            <li>News Privacy</li>
+          </ul>
+        </div>
+        <div class="foot3">
+          <br />
+          <h3>Additional links</h3>
+          <ul>
+            <li>Feedback</li>
+            <li>Entry level talent</li>
+            <li>Roles</li>
+            <li>Search & Apply</li>
+            <li>Who we are</li>
+            <li>Working here</li>
+            <li>Social Media</li>
+          </ul>
+        </div>
+      </div>
+      <p id="copy"><b>Copyright © 2022</b></p>
+    </footer>
+
+    <script src="./basket.js"></script>
+
+</body>
+</html>

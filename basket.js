@@ -16,7 +16,6 @@ for (i = 0; i < itemsInBasket.length; i++) {
     ) / 100;
   localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
 
-
   itemInBasket.innerHTML += `<div class = "item">
 <img src="deleteIcon.jpg" onclick="deleteItemFromBasket(${
     itemsInBasket[i]["ID"]
@@ -225,8 +224,7 @@ function productInBasket() {
 
 /**tlacidlo odosli objednavku */
 function placeOrder() {
-
-/** validacia formularov(dorava+adresa) */
+  /** validacia formularov(doprava+adresa) */
 
   let name = document.formInBasket.firstname.value;
   let email = document.formInBasket.email.value;
@@ -235,41 +233,51 @@ function placeOrder() {
   let zip = document.formInBasket.zip.value;
   let state = document.formInBasket.state.value;
 
-  
-/**Validacia zadania dopravy */
-  if(!(document.getElementById("kurier").checked || document.getElementById("posta").checked ||
-  document.getElementById("zasielkovna").checked || document.getElementById("OsobnyOdber").checked)){
-      alert("Zvolte dopravu");
-      return;
+  /**Validacia zadania dopravy */
+  if (
+    !(
+      document.getElementById("kurier").checked ||
+      document.getElementById("posta").checked ||
+      document.getElementById("zasielkovna").checked ||
+      document.getElementById("OsobnyOdber").checked
+    )
+  ) {
+    alert("Zvolte dopravu");
+    return;
   }
-   
-  
 
   /**validacia vyplnenia formularu */
 
-   if (name == null || name == "") {
+  if (name == null || name == "") {
     alert("Vyplňte meno");
-    return false;
+    return;
   } else if (email == null || email == "") {
     alert("Vyplňte email");
-    return false;
+    return;
   } else if (address == null || address == "") {
     alert("Vyplňte adresu");
-    return false;
+    return;
   } else if (city == null || city == "") {
     alert("Vyplňte mesto");
-    return false;
+    return;
   } else if (zip == null || zip == "") {
     alert("Vyplňte PSČ");
-    return false;
+    return;
   } else if (state == null || state == "") {
     alert("Vyplňte štát");
-    return false;
+    return;
   }
 
   /** ulozenie dat z formularu */
-  const customer = { name: name, address: address, city: city, ZIP: zip, email: email, state: state };
- 
+  const customer = {
+    name: name,
+    address: address,
+    city: city,
+    ZIP: zip,
+    email: email,
+    state: state,
+  };
+
   /** Cislo objednavky */
   let orderID = localStorage.getItem("orderID");
   if (orderID == undefined) {
@@ -280,17 +288,18 @@ function placeOrder() {
 
   /** odoslanie objednavky do LocalSorage */
   const order = [];
-  order.push({orderID: orderID});
+  order.push({ orderID: orderID });
   order.push(customer);
-  order.push({DeliveryPrice: deliveryPrice});
+  order.push({ DeliveryPrice: deliveryPrice });
   order.push(itemsInBasket);
   localStorage.setItem(orderID, JSON.stringify(order));
-  
- /**sprava o odoslani objednavky */
- alert("Vašu objenávku sme zaevidovali pod číslom " + orderID);
 
-/**Vymazanie kosika */
+  /**sprava o odoslani objednavky */
+  alert("Vašu objenávku sme zaevidovali pod číslom " + orderID);
 
-
-
+  /**Vymazanie kosika */
+  itemsInBasket = []; //vymaze polozky z ls
+  localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
+  localStorage.setItem("totalSum", JSON.stringify(0));
+  location.replace("emptyBasket.html")
 }

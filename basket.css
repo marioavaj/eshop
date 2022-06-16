@@ -1,5 +1,32 @@
+#emptyBasketWrapperGrid {
+    z-index: 1;
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 7em auto 2em;
+    border-top: 10px solid gold;
+    height: 40em;
+    width: 40%;
+    background-color: black;
+    top: 10em;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%);
+}
 
+#emptyBasketWrapperHeader{
+    text-align: center;
+    background-color: black;
+}
+
+#emptyBasketImg{
+width: 100%;
+margin-top: 4em;
+}
+
+#h1InEmptyBasket{
+    color: silver;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+}
 
 #basketWrapperGrid {
     z-index: 1;
@@ -7,11 +34,14 @@
     margin: 7em auto 2em;
     border-top: 10px solid gold;
     padding: 1em;
-    width: 80%;
+    width: 70%;
     background-color: white;
     top: 10em;
     clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%);
 }
+
+
+
 #basketWrapperHeader {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 0.9fr 0.6fr;
