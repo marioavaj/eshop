@@ -17,7 +17,7 @@ const whatSearchingSplit =  whatSearching.toLowerCase().split(" ")
 /**vyhladanie v produktoch v JSON */
 fetch("./products.json")
   .then((response) => response.json())
-  .then((json) => {
+  .then((json) => { 
     var count = 0;
     var whatFinded;
     let searchResults = document.querySelector(".productsWrapper");
