@@ -111,6 +111,8 @@ fetch("./products.json")
     }
   });
 
+  /**zobrazenie podobnych produktov */
+
 fetch("./products.json")
   .then((response) => response.json())
   .then((json) => {

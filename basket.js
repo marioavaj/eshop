@@ -224,6 +224,7 @@ function productInBasket() {
 
 /**tlacidlo odosli objednavku */
 function placeOrder() {
+  
   /** validacia formularov(doprava+adresa) */
 
   let name = document.formInBasket.firstname.value;
@@ -242,13 +243,12 @@ function placeOrder() {
       document.getElementById("OsobnyOdber").checked
     )
   ) {
-    alert("Zvolte dopravu");
+    alert("Zvoľte dopravu");
     return;
   }
 
   /**validacia vyplnenia formularu */
-
-  if (name == null || name == "") {
+    if (name == null || name == "") {
     alert("Vyplňte meno");
     return;
   } else if (email == null || email == "") {
