@@ -4,37 +4,23 @@ function searching(){
 var whatSearching = (document.getElementById("search").value);
 whatSearching = whatSearching.toLowerCase();
 
-
-//var whatSearching = document.getElementById("search").value;
-
-
-/**rozdelenie viacslovneho retazca na samostatne retazce*/
-
-
-
-/**uprava retazcov pre vstup do vzhladavania pomocou regex */
-
-
 /**vyhladanie v produktoch v JSON */
 
 fetch("./products.json")
   .then((response) => response.json())
   .then((json) => { 
-    var count = 0;
-    var whatFinded;
+    let count = 0;
+    let whatFinded;
     let searchResults = document.querySelector(".productsWrapper");
     searchResults.innerHTML=` `;
     for (let i = 0; i < json.length; i++) {
-        whereSearch =json[i].PRODUCT_NAME ;
+        let whereSearch =json[i].PRODUCT_NAME ;
         whereSearch = whereSearch.toLowerCase();
         
          whatFinded = whereSearch.match(whatSearching);
-         
-        
+                 
       if (whatFinded!=null) {
-
-        
-
+   
         if (count < 50) {
           count++;
          
@@ -61,10 +47,5 @@ fetch("./products.json")
       }
     }
   });
-
-
-/**vypis vzhladanych produktov na obrayovku */
-
-
 }
 
