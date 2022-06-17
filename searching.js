@@ -1,20 +1,22 @@
 function searching(){
 
 /**nacitanie retazca od uzivatela */   
-var whatSearching = document.getElementById("search").value;
+var whatSearching = (document.getElementById("search").value);
+whatSearching = whatSearching.toLowerCase();
 
 
 //var whatSearching = document.getElementById("search").value;
 
 
 /**rozdelenie viacslovneho retazca na samostatne retazce*/
-const whatSearchingSplit =  whatSearching.toLowerCase().split(" ")
+
 
 
 /**uprava retazcov pre vstup do vzhladavania pomocou regex */
 
 
 /**vyhladanie v produktoch v JSON */
+
 fetch("./products.json")
   .then((response) => response.json())
   .then((json) => { 
@@ -24,13 +26,14 @@ fetch("./products.json")
     searchResults.innerHTML=` `;
     for (let i = 0; i < json.length; i++) {
         whereSearch =json[i].PRODUCT_NAME ;
-           
+        whereSearch = whereSearch.toLowerCase();
+        
          whatFinded = whereSearch.match(whatSearching);
          
         
       if (whatFinded!=null) {
 
-        console.log(json[i].PRODUCT_NAME)
+        
 
         if (count < 50) {
           count++;
