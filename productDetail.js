@@ -37,11 +37,12 @@ fetch("./products.json")
           `<button id="BASKET" onclick="productInBasketbuttonClick()">Vlož do košíka</button>` +
           `<input id="INPUT" type="number" value="1" min="1" max="999">`;
           
+          
+          
           document.getElementById("BASKET").onclick = function() {addToBasket()};
-
-          function addToBasket (){             
-            
-            
+          /**zmena ikony kosika v hlavnom menu */
+          function addToBasket (){    
+                   
             document.querySelector("#topNavBasketIcon").style.color = "red"
           
           

@@ -313,10 +313,19 @@ text-decoration: none;
 
 #deliveryBasketWprapper{
     display: grid;
-    grid-template-columns: 5fr 0.1fr 1fr 2fr 1fr;
+    grid-template-columns: 5fr 0.1fr 1.2fr 2fr 1fr;
    /* background-color: #D7f5ff;*/
    background: rgb(215,245,255);
 background: linear-gradient(180deg, rgba(215,245,255,0.529) 22%, rgba(89,207,54,0.3) 34%, rgba(137, 120, 104, 0.3) 94%, rgba(136,119,103,0.4) 99%);
+    
+    
+}
+
+#deliveryFreeStyle{
+   
+    background-color: red;
+    width: 10em;
+    grid: 16;
     
     
 }
@@ -335,25 +344,34 @@ background: linear-gradient(180deg, rgba(215,245,255,0.529) 22%, rgba(89,207,54,
 #osobnyOdberLabel{grid: 16 ;}
 #osobnyOdber{    grid: 17 ;}
 
+#deliveryFree{
+    padding: 0.5em;
+    
+    background-color: #cb0c0c;
+    width: 10em;
+}
+
 #imgDelivery{
     margin: 0;
     grid-row-start: 1;
   grid-row-end: 5;
-  width: 107%;
+  width: 50em;
+  
 }
 
 .deliveryStyle{
-    padding: 0.5em;
+    font-size: 0.8em;
     justify-content: center;
+    margin-left: 0.5em;
     margin-top: auto;
     margin-bottom: auto;
       
 }
 
 .deliveryPriceStyle{
-    
+    font-size: 0.8em;
     padding: 0.5em;
-    margin: auto 0.5em auto ;
+    
     text-align: right;
 
 }

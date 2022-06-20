@@ -6,6 +6,8 @@ var priceWithVat = document.querySelector("#totalPriceInBasket");
 var totalSumWithoutVAT;
 var vat;
 
+
+
 /**Vypise polozky z kosika z ls */
 for (i = 0; i < itemsInBasket.length; i++) {
   let sum =
@@ -46,7 +48,7 @@ for (i = 0; i < itemsInBasket.length; i++) {
           100
       ) / 100;
   }
-  console.log(totalSum);
+  
 
   var totalSumWithoutVAT = Math.round((totalSum / 1.2) * 100) / 100;
   vat = Math.round((totalSum - totalSumWithoutVAT) * 100) / 100;
@@ -69,6 +71,105 @@ for (i = 0; i < itemsInBasket.length; i++) {
                     `;
 }
 
+
+
+var deliveryPriceWrapper = document.getElementById("deliveryBasketWprapper");
+
+
+deliveryFree(totalSum);
+
+function deliveryFree(totalSum){
+
+  /**Zobrazit alebo zrusit dopravu podla ceny objednavku */
+ 
+  
+if (totalSum >= 30){
+ 
+  
+deliveryPriceWrapper.innerHTML = 
+`<img
+          id="imgDelivery"
+          src="./img/delivery.png"
+          
+          alt=""
+        />
+        <button id="freeDelivery" style= "top: 1.9em">Doprava zdarma</button>`
+
+}else 
+
+deliveryPriceWrapper.innerHTML = 
+`<img
+          id="imgDelivery"
+          src="./img/delivery.png"
+          
+          alt=""
+        />
+
+        <input
+          onchange="getValue(this)"
+          value="5"
+          type="radio"
+          class="deliveryStyle"
+          name="delivery"
+          id="kurier"
+        />
+        <label for="delivery" class="deliveryStyle" id="kurierLabel"
+          ><b>Kuriér</b></label
+        >
+        <div class="deliveryStyle"><i>Dodacia doba 1 pracovný deň</i></div>
+        <div class="deliveryPriceStyle">5.00 €</div>
+
+        <input
+          onchange="getValue(this)"
+          value="4"
+          type="radio"
+          class="deliveryStyle"
+          name="delivery"
+          id="posta"
+        />
+        <label for="delivery" class="deliveryStyle" id="postaLabel"
+          ><b>Slovenká pošta</b></label
+        >
+        <div class="deliveryStyle"><i>Dodacia doba 3 pracovné dni</i></div>
+        <div class="deliveryPriceStyle">4.00 €</div>
+
+        <input
+          onchange="getValue(this)"
+          value="2"
+          type="radio"
+          class="deliveryStyle"
+          name="delivery"
+          id="zasielkovna"
+        />
+        <label for="delivery" class="deliveryStyle" id="zasielakovnaLabel"
+          ><b>Zásielkovňa</b></label
+        >
+        <div class="deliveryStyle"><i>Vyzdvihnutie na odbernom mieste</i></div>
+        <div class="deliveryPriceStyle">2.00 €</div>
+
+        <input
+          onchange="getValue(this)"
+          value="1"
+          type="radio"
+          class="deliveryStyle"
+          name="delivery"
+          id="OsobnyOdber"
+        />
+        <label for="delivery" class="deliveryStyle" id="osobnyOdberLabel"
+          ><b>Osobný odber</b></label
+        >
+        <div class="deliveryStyle"><i>Odber v mieste sídla</i></div>
+        <div class="deliveryPriceStyle">1.00 €</div>`
+
+      }
+
+
+
+
+
+
+
+
 function valueChecker() {
   let valueCheck = document.querySelectorAll(".increaseCountBasket").value;
 
@@ -89,6 +190,9 @@ function getValue(radio) {
   if (previous == undefined) {
     previous = 0;
   }
+
+
+
   totalSum = totalSum + parseInt(radio.value) - previous;
   localStorage.setItem("totalSum", JSON.stringify(totalSum));
   totalSumElement.innerText = Math.round(totalSum * 100) / 100 + " €";
@@ -96,7 +200,7 @@ function getValue(radio) {
     Math.round(totalSum * 0.2 * 100) / 100 + " €";
   totalPriceInBasketWithoutVATElement.innerText =
     Math.round((totalSum / 1.2) * 100) / 100 + " €";
-  console.log(totalSum);
+  
   previous = parseInt(radio.value);
   deliveryPrice = radio.value;
   return deliveryPrice;
@@ -138,6 +242,8 @@ parent.addEventListener("input", (e) => {
   localStorage.setItem("basketInLocalStorage", JSON.stringify(itemsInBasket));
   localStorage.setItem("totalSum", JSON.stringify(totalSum));
 
+  deliveryFree(totalSum);
+
   priceWithVat.innerHTML = `
                 <div id="textWithoutVAT">Celkom bez DPH</div>
                 <div id="totalPriceInBasketWithoutVAT">${
@@ -147,7 +253,8 @@ parent.addEventListener("input", (e) => {
                 <div id="totalPriceVAT">${vat + " €"}</div>
                 <div id="textWithVAT">Celkom s DPH</div>
                 <div id="totalPriceInBasketWithVAT">${totalSum + " €"}</div>
-            `;
+                            `;
+                            return totalSum;
 });
 
 /**vymazanie vsetkych poloziek z kosika */
@@ -172,11 +279,10 @@ function deleteItemsFromBasket() {
 }
 
 /** vymazanie 1 polozky z kosika */
-
 function deleteItemFromBasket(deleteItem) {
   totalSum = localStorage.getItem("totalSum");
 
-  console.log("Vstup do fukcie " + totalSum);
+  
   for (let i = 0; i < itemsInBasket.length; i++) {
     if (deleteItem == itemsInBasket[i]["ID"]) {
       totalSum =
@@ -187,10 +293,6 @@ function deleteItemFromBasket(deleteItem) {
             100
         ) / 100;
 
-      console.log("total po zruseni polozky " + totalSum);
-      console.log(
-        "cena zruenej polozky" + parseFloat(itemsInBasket[i].PRICE_WITH_VAT)
-      );
       localStorage.setItem("totalSum", JSON.stringify(totalSum));
 
       priceWithVat.innerHTML = `
@@ -222,20 +324,23 @@ function productInBasket() {
   }
 }
 
+
+  
 /**tlacidlo odosli objednavku */
 function placeOrder() {
   
-  /** validacia formularov(doprava+adresa) */
+/** validacia formularov(doprava+adresa) */
+var userName = document.formInBasket.firstname.value;
+  var email = document.formInBasket.email.value;
+  var address = document.formInBasket.address.value;
+  var city = document.formInBasket.city.value;
+  var zip = document.formInBasket.zip.value;
+  var state = document.formInBasket.state.value;
 
-  let name = document.formInBasket.firstname.value;
-  let email = document.formInBasket.email.value;
-  let address = document.formInBasket.address.value;
-  let city = document.formInBasket.city.value;
-  let zip = document.formInBasket.zip.value;
-  let state = document.formInBasket.state.value;
-
+  
   /**Validacia zadania dopravy */
-  if (
+  if (totalSum <= 30){
+    if (
     !(
       document.getElementById("kurier").checked ||
       document.getElementById("posta").checked ||
@@ -246,9 +351,11 @@ function placeOrder() {
     alert("Zvoľte dopravu");
     return;
   }
+} 
+
 
   /**validacia vyplnenia formularu */
-    if (name == null || name == "") {
+    if (userName == null || userName == "") {
     alert("Vyplňte meno");
     return;
   } else if (email == null || email == "") {
@@ -270,7 +377,7 @@ function placeOrder() {
 
   /** ulozenie dat z formularu */
   const customer = {
-    name: name,
+    name: userName,
     address: address,
     city: city,
     ZIP: zip,

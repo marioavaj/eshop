@@ -71,71 +71,10 @@
 
       <div id="ItemBasketWrapperGrid"></div>
       <br />
-      <h1 class="h1InBasket">Doprava</h1>
+      <h1 id = "deliveryFreeID" class="h1InBasket">Doprava</h1>
 
       <form id="deliveryBasketWprapper">
-        <img
-          id="imgDelivery"
-          src="./img/delivery.png"
-          style="margin-top: 1em"
-          alt=""
-        />
-
-        <input
-          onchange="getValue(this)"
-          value="5"
-          type="radio"
-          class="deliveryStyle"
-          name="delivery"
-          id="kurier"
-        />
-        <label for="delivery" class="deliveryStyle" id="kurierLabel"
-          ><b>Kuriér</b></label
-        >
-        <div class="deliveryStyle"><i>Dodacia doba 1 pracovný deň</i></div>
-        <div class="deliveryPriceStyle">5.00 €</div>
-
-        <input
-          onchange="getValue(this)"
-          value="4"
-          type="radio"
-          class="deliveryStyle"
-          name="delivery"
-          id="posta"
-        />
-        <label for="delivery" class="deliveryStyle" id="postaLabel"
-          ><b>Slovenká pošta</b></label
-        >
-        <div class="deliveryStyle"><i>Dodacia doba 3 pracovné dni</i></div>
-        <div class="deliveryPriceStyle">4.00 €</div>
-
-        <input
-          onchange="getValue(this)"
-          value="2"
-          type="radio"
-          class="deliveryStyle"
-          name="delivery"
-          id="zasielkovna"
-        />
-        <label for="delivery" class="deliveryStyle" id="zasielakovnaLabel"
-          ><b>Zásielkovňa</b></label
-        >
-        <div class="deliveryStyle"><i>Vyzdvihnutie na odbernom mieste</i></div>
-        <div class="deliveryPriceStyle">2.00 €</div>
-
-        <input
-          onchange="getValue(this)"
-          value="1"
-          type="radio"
-          class="deliveryStyle"
-          name="delivery"
-          id="OsobnyOdber"
-        />
-        <label for="delivery" class="deliveryStyle" id="osobnyOdberLabel"
-          ><b>Osobný odber</b></label
-        >
-        <div class="deliveryStyle"><i>Odber v mieste sídla</i></div>
-        <div class="deliveryPriceStyle">1.00 €</div>
+       
       </form>
 
       <div id="totalPriceInBasket">
