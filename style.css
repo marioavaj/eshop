@@ -542,11 +542,18 @@ z-index: 1;
   border: 0;
   line-height: 1;
   left: 4em;
-  top: 6em;   
+  top: 4.7em;   
   
 }
 
-
+#polygon{
+  position:absolute;
+  top: 32em;
+  width: 19.8em;
+  height: 5em;
+  background-color: #2c2d2d;
+  clip-path: polygon(100% 0, 100% 35%, 50% 64%, 0 36%, 0 0);
+}
   
 
 
