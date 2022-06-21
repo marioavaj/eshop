@@ -405,12 +405,14 @@
                 "CATEGORY_NAME": "Kryty pod motor",
                 "CATEGORY_PATH": "Exteriér - presné doplnky | Kryty pod motor",
                 "CATEGORIES": {
-                  "CATEGORY": {
+                  "CATEGORY":[
+                   {
                     "-ID": "191",
-                    "CATEGORY_NAME": "Montážne prvky pre kryty motora",
+                    "CATEGORY_NAME": "Montážne prvky krytu motora",
                     "CATEGORY_PATH": "Exteriér - presné doplnky | Kryty pod motor | Montážne prvky pre kryty motora"
                   }
-                }
+                ]
+              }
               },
               {
                 "-ID": "19",
@@ -508,7 +510,7 @@
                     },
                     {
                       "-ID": "52",
-                      "CATEGORY_NAME": "Pružné stierače Heyner (s náhradnou gumičkou)",
+                      "CATEGORY_NAME": "Pružné stierače Heyner",
                       "CATEGORY_PATH": "Exteriér - presné doplnky | Stierače | Pružné stierače Heyner (s náhradnou gumičkou)"
                     },
                     {
@@ -920,7 +922,7 @@
                   "CATEGORY": [
                     {
                       "-ID": "172",
-                      "CATEGORY_NAME": "Antikorózne a ochranné prostriedky HB Body",
+                      "CATEGORY_NAME": "Ochranné prostriedky HB Body",
                       "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Antikorózne a ochranné prostriedky HB Body"
                     },
                     {
@@ -935,7 +937,7 @@
                     },
                     {
                       "-ID": "173",
-                      "CATEGORY_NAME": "Tesniace hmoty a lepidlá HB Body",
+                      "CATEGORY_NAME": "Tesniace hmoty  HB Body",
                       "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Tesniace hmoty a lepidlá HB Body"
                     },
                     {
@@ -945,7 +947,7 @@
                     },
                     {
                       "-ID": "176",
-                      "CATEGORY_NAME": "Tužidlá, riedidlá a plniče HB Body",
+                      "CATEGORY_NAME": "Tužidlá a plniče HB Body",
                       "CATEGORY_PATH": "Autokozmetika a autochémia | HB Body | Tužidlá, riedidlá a plniče HB Body"
                     }
                   ]
@@ -1100,13 +1102,16 @@
                 "CATEGORY_NAME": "Nabíjačky autobatérií",
                 "CATEGORY_PATH": "Elektronika | Nabíjačky autobatérií",
                 "CATEGORIES": {
-                  "CATEGORY": {
+                  "CATEGORY": [
+                  {
                     "-ID": "109",
                     "CATEGORY_NAME": "Nabíjačky autobatérií",
                     "CATEGORY_PATH": "Elektronika | Nabíjačky autobatérií | Nabíjačky autobatérií"
                   }
-                }
-              },
+                  
+                ]
+              }
+            },
               {
                 "-ID": "33",
                 "CATEGORY_NAME": "Interiérová ",

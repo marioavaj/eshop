@@ -11,7 +11,14 @@ fetch("./categories.json")
 
       if (json[i].hasOwnProperty("CATEGORIES")){      
       for (let j = 0; j < json[i].CATEGORIES.CATEGORY.length; j++) {
-        s += `<li class="has-sub"><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
+
+        if (json[i].CATEGORIES.CATEGORY[j].hasOwnProperty("CATEGORIES")) {
+         s += `<li class="has-sub"><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
+
+
+        }else s += `<li><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
+
+        
 
         if (json[i].CATEGORIES.CATEGORY[j].hasOwnProperty("CATEGORIES")) {
           s += "<ul>"; 
