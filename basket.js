@@ -275,7 +275,11 @@ function deleteItemsFromBasket() {
                 <div id="textWithVAT">Celkom s DPH</div>
                 <div id="totalPriceInBasketWithVAT"></div>
             `;
+
+            deliveryPriceWrapper.innerHTML = "";
+            
   }
+  
 }
 
 /** vymazanie 1 polozky z kosika */
@@ -315,6 +319,7 @@ function deleteItemFromBasket(deleteItem) {
         JSON.stringify(itemsInBasket)
       );
       itemInBasket.removeChild(itemInBasket.children[i]);
+      deliveryFree(totalSum);
     }
   }
 }
@@ -352,8 +357,6 @@ var userName = document.formInBasket.firstname.value;
     return;
   }
 } 
-
-
   /**validacia vyplnenia formularu */
     if (userName == null || userName == "") {
     alert("Vyplňte meno");

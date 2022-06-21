@@ -76,7 +76,7 @@
                   "CATEGORY": [
                     {
                       "-ID": "66",
-                      "CATEGORY_NAME": "Kompresory a pneumerače",
+                      "CATEGORY_NAME": "Hustilky, kompresory a pneumerače",
                       "CATEGORY_PATH": "Povinná a doplnková výbava | Náradie | Hustilky, kompresory a pneumerače"
                     },
                     {
@@ -187,12 +187,12 @@
                     },
                     {
                       "-ID": "39",
-                      "CATEGORY_NAME": "Autorohože výšší okraj",
+                      "CATEGORY_NAME": "Autorohože gumové so zvýšeným okrajom",
                       "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové so zvýšeným okrajom"
                     },
                     {
                       "-ID": "97",
-                      "CATEGORY_NAME": "Autorohože univerzálne",
+                      "CATEGORY_NAME": "Autorohože gumové univerzálne",
                       "CATEGORY_PATH": "Interiér - presné doplnky | Autorohože gumové | Autorohože gumové univerzálne"
                     }
                   ]
@@ -216,7 +216,7 @@
                     },
                     {
                       "-ID": "45",
-                      "CATEGORY_NAME": "Vaničky do kufra plastové",
+                      "CATEGORY_NAME": "Vaničky do kufra plastové s protišmykom",
                       "CATEGORY_PATH": "Interiér - presné doplnky | Vaničky do kufra | Vaničky do kufra plastové s protišmykom"
                     }
                   ]
@@ -330,12 +330,12 @@
                   "CATEGORY": [
                     {
                       "-ID": "217",
-                      "CATEGORY_NAME": "Na bicykle-ťažné zariadenie",
+                      "CATEGORY_NAME": "Nosiče bicyklov na ťažné zariadenie",
                       "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Nosiče bicyklov na ťažné zariadenie"
                     },
                     {
                       "-ID": "177",
-                      "CATEGORY_NAME": "Priečne strešné nosiče",
+                      "CATEGORY_NAME": "Priečne strešné nosiče - priečniky",
                       "CATEGORY_PATH": "Exteriér - presné doplnky | Nosiče | Priečne strešné nosiče - priečniky"
                     },
                     {
@@ -555,7 +555,7 @@
                   "CATEGORY": [
                     {
                       "-ID": "246",
-                      "CATEGORY_NAME": "Hľadač kľúčov ",
+                      "CATEGORY_NAME": "Hľadač kľúčov FIXED SMILE/ FIXED SENSE",
                       "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Hľadač kľúčov FIXED SMILE/ FIXED SENSE"
                     },
                     {
@@ -585,7 +585,7 @@
                     },
                     {
                       "-ID": "240",
-                      "CATEGORY_NAME": "Samolepky pre 3D autorohože",
+                      "CATEGORY_NAME": "Živicové samolepky pre 3D autorohože",
                       "CATEGORY_PATH": "Univerzálne doplnky | Interiérové autodoplnky | Živicové samolepky pre 3D autorohože"
                     },
                     {
@@ -1178,8 +1178,30 @@
             ]
           }
         },
-        
-        
+        {
+          "-ID": "139",
+          "CATEGORY_NAME": "Motodoplnky",
+          "CATEGORY_PATH": "Motodoplnky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "140",
+              "CATEGORY_NAME": "Motodoplnky",
+              "CATEGORY_PATH": "Motodoplnky | Motodoplnky"
+            }
+          }
+        },
+        {
+          "-ID": "160",
+          "CATEGORY_NAME": "Reflexné prvky",
+          "CATEGORY_PATH": "Reflexné prvky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "161",
+              "CATEGORY_NAME": "Reflexné prvky",
+              "CATEGORY_PATH": "Reflexné prvky | Reflexné prvky"
+            }
+          }
+        },
         {
           "-ID": "91",
           "CATEGORY_NAME": "Nástenné lekárničky",
@@ -1199,7 +1221,18 @@
             ]
           }
         },
-        
+        {
+          "-ID": "231",
+          "CATEGORY_NAME": "Rukavice TEGERA",
+          "CATEGORY_PATH": "Rukavice TEGERA",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "232",
+              "CATEGORY_NAME": "Pracovné rukavice",
+              "CATEGORY_PATH": "Rukavice TEGERA | Pracovné rukavice"
+            }
+          }
+        },
         {
           "-ID": "226",
           "CATEGORY_NAME": "Ochrana a dezinfekcia",
@@ -1219,7 +1252,18 @@
             ]
           }
         },
-        
+        {
+          "-ID": "233",
+          "CATEGORY_NAME": "Darčekové poukážky",
+          "CATEGORY_PATH": "Darčekové poukážky",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "234",
+              "CATEGORY_NAME": "Darčekové poukážky",
+              "CATEGORY_PATH": "Darčekové poukážky | Darčekové poukážky"
+            }
+          }
+        },
         {
           "-ID": "252",
           "CATEGORY_NAME": "Aktuálny Newsletter",
@@ -1238,8 +1282,19 @@
               }
             ]
           }
+        },
+        {
+          "-ID": "157",
+          "CATEGORY_NAME": "Akcie",
+          "CATEGORY_PATH": "Akcie",
+          "CATEGORIES": {
+            "CATEGORY": {
+              "-ID": "200",
+              "CATEGORY_NAME": "Aktuálne akcie",
+              "CATEGORY_PATH": "Akcie | Aktuálne akcie"
+            }
+          }
         }
-        
       ]
   
 

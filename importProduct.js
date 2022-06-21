@@ -1,13 +1,33 @@
+/**import kategorii */
+let tree = document.getElementById("tree");
 fetch("./categories.json")
   .then((response) => response.json())
   .then((json) => {
+    let s = "";
+
     for (let i = 0; i < json.length; i++) {
-      let tree = document.getElementById("tree");
-      tree.innerHTML +=
-        `<a href="#" class="sideMenu"><i class="fa-solid fa-angle-right"></i>` + `  `+ json[i].CATEGORY_NAME +`<br>`+`</a>`+ `<div id="spaceCategory">.</div>`;
+      s += `<li href="#"><a href="">${json[i].CATEGORY_NAME}</a>`;
+      s += "<ul>"; // otvorime zoznam
+
+      if (json[i].hasOwnProperty("CATEGORIES")){      
+      for (let j = 0; j < json[i].CATEGORIES.CATEGORY.length; j++) {
+        s += `<li   ><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
+
+        if (json[i].CATEGORIES.CATEGORY[j].hasOwnProperty("CATEGORIES")) {
+          s += "<ul>"; 
+          for (let k = 0; k < json[i].CATEGORIES.CATEGORY[j].CATEGORIES.CATEGORY.length; k++) {
+            s += `<li href="#"><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORIES.CATEGORY[k].CATEGORY_NAME}</a></li>`;
+          }
+          s += `</ul></li>`; 
+        }
+      }
+      s += `</ul></li>`; // zatvorime zoznam
     }
+  }
+    tree.innerHTML = s;
   });
 
+/**import 15 nahodnych produktov na hlavnu stranu */  
 fetch("./products.json")
   .then((response) => response.json())
   .then((json) => {
