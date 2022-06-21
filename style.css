@@ -54,7 +54,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 41.5em 5% 0 5%;
+  margin: 42em 5% 0 5%;
 }
 
 .productsWrapper img {
@@ -637,7 +637,7 @@ z-index: 1;
 .navigation > ul > li:hover a { background: #4a4b4b }
 .navigation li { position: relative; }
 .navigation ul li.has-sub > a:after {
-  content: '>>';
+  content: '»';
   position: absolute;
   right: 1em;
 }

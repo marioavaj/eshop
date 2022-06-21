@@ -6,12 +6,12 @@ fetch("./categories.json")
     let s = "";
 
     for (let i = 0; i < json.length; i++) {
-      s += `<li href="#"><a href="">${json[i].CATEGORY_NAME}</a>`;
+      s += `<li href="#" class="has-sub"><a href="">${json[i].CATEGORY_NAME}</a>`;
       s += "<ul>"; // otvorime zoznam
 
       if (json[i].hasOwnProperty("CATEGORIES")){      
       for (let j = 0; j < json[i].CATEGORIES.CATEGORY.length; j++) {
-        s += `<li   ><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
+        s += `<li class="has-sub"><a href="">${json[i].CATEGORIES.CATEGORY[j].CATEGORY_NAME}</a>`;
 
         if (json[i].CATEGORIES.CATEGORY[j].hasOwnProperty("CATEGORIES")) {
           s += "<ul>"; 
