@@ -683,63 +683,63 @@
               },
               {
                 "-ID": "25",
-                "CATEGORY_NAME": "Interiérová",
-                "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová",
+                "CATEGORY_NAME": "Interiérová autokozmetika",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová autokozmetika",
                 "CATEGORIES": {
                   "CATEGORY": [
                     {
                       "-ID": "115",
                       "CATEGORY_NAME": "Na palubnú dosku",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Na palubnú dosku"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová autokozmetika | Na palubnú dosku"
                     },
                     {
                       "-ID": "116",
                       "CATEGORY_NAME": "Textil a koža",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Textil a koža"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová autokozmetika | Textil a koža"
                     },
                     {
                       "-ID": "117",
                       "CATEGORY_NAME": "Sklo a ostatné",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová | Sklo a ostatné"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Interiérová autokozmetika | Sklo a ostatné"
                     }
                   ]
                 }
               },
               {
                 "-ID": "26",
-                "CATEGORY_NAME": "Exteriérová",
-                "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová",
+                "CATEGORY_NAME": "Exteriérová autokozmetika",
+                "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika",
                 "CATEGORIES": {
                   "CATEGORY": [
                     {
                       "-ID": "118",
                       "CATEGORY_NAME": "Autošampóny",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Autošampóny"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Autošampóny"
                     },
                     {
                       "-ID": "119",
                       "CATEGORY_NAME": "Disky, pneumatiky, brzdy",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Disky, pneumatiky, brzdy"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Disky, pneumatiky, brzdy"
                     },
                     {
                       "-ID": "120",
                       "CATEGORY_NAME": "Okná a sklo",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Okná a sklo"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Okná a sklo"
                     },
                     {
                       "-ID": "121",
                       "CATEGORY_NAME": "Vosky a leštenky",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Vosky a leštenky"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Vosky a leštenky"
                     },
                     {
                       "-ID": "122",
                       "CATEGORY_NAME": "Karoséria a plasty",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Karoséria a plasty"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Karoséria a plasty"
                     },
                     {
                       "-ID": "123",
                       "CATEGORY_NAME": "Motor a ostatné",
-                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová | Motor a ostatné"
+                      "CATEGORY_PATH": "Autokozmetika a autochémia | Exteriérová autokozmetika | Motor a ostatné"
                     }
                   ]
                 }
@@ -1223,27 +1223,9 @@
               }
             ]
           }
-        },
-        
-        {
-          "-ID": "252",
-          "CATEGORY_NAME": "Aktuálny Newsletter",
-          "CATEGORY_PATH": "Aktuálny Newsletter",
-          "CATEGORIES": {
-            "CATEGORY": [
-              {
-                "-ID": "253",
-                "CATEGORY_NAME": "MEGUIARS Výpredaj",
-                "CATEGORY_PATH": "Aktuálny Newsletter | MEGUIARS Výpredaj"
-              },
-              {
-                "-ID": "257",
-                "CATEGORY_NAME": "Všetko do 4 €",
-                "CATEGORY_PATH": "Aktuálny Newsletter | Všetko do 4 €"
-              }
-            ]
-          }
         }
+        
+        
         
       ]
   
