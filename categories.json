@@ -982,24 +982,24 @@
         },
         {
           "-ID": "182",
-          "CATEGORY_NAME": "Meguiar's - autokozmetika",
-          "CATEGORY_PATH": "Meguiar's - autokozmetika",
+          "CATEGORY_NAME": "Meguiars - autokozmetika",
+          "CATEGORY_PATH": "Meguiars - autokozmetika",
           "CATEGORIES": {
             "CATEGORY": [
               {
                 "-ID": "184",
                 "CATEGORY_NAME": "Meguiars - exteriér",
-                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - exteriér"
+                "CATEGORY_PATH": "Meguiars - autokozmetika | Meguiars - exteriér"
               },
               {
                 "-ID": "183",
                 "CATEGORY_NAME": "Meguiars - interiér",
-                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - interiér"
+                "CATEGORY_PATH": "Meguiars - autokozmetika | Meguiars - interiér"
               },
               {
                 "-ID": "185",
                 "CATEGORY_NAME": "Meguiars - príslušenstvo",
-                "CATEGORY_PATH": "Meguiar's - autokozmetika | Meguiars - príslušenstvo"
+                "CATEGORY_PATH": "Meguiars - autokozmetika | Meguiars - príslušenstvo"
               }
             ]
           }
