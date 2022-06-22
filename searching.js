@@ -100,19 +100,18 @@ function categoryList(catName) {
     .then((json) => {
       let count = 0;
       
-      const newIdArray = idArray.toString().replaceAll(',', ' ');
-      
+      const newIdArray = " " + idArray.toString().replaceAll(",", " ");
+      console.log("V tomto stringu " + newIdArray);
       let searchResults = document.querySelector(".productsWrapper");
       searchResults.innerHTML = ` `;
       for (let i = 0; i < json.length; i++) {
         let whatIsSearch = json[i]["CATEGORY_ID"];
        whatIsSearch = whatIsSearch.toString();
-           
-      let whatIsFinded = whatIsSearch.match(`${newIdArray}`);      
-       
-
+      whatIsFinded = newIdArray.search("\\b" + whatIsSearch + "\\b");
+      
+      if (whatIsFinded !=-1){
                 
-        if (whatIsFinded != null) {
+        
           if (count < 50) {
             count++;
             
