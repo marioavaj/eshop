@@ -61,7 +61,7 @@ function categoryList(catName) {
         if (whatFinded !=null){
           idArray.push(json[i]["-ID"])
         }
-        console.log(idArray);
+        
 
         if (json[i].hasOwnProperty("CATEGORIES")) {
           for (let j = 0; j < json[i].CATEGORIES.CATEGORY.length; j++) {
@@ -70,7 +70,7 @@ function categoryList(catName) {
              whatFinded = whereSearch.match(catName);
         if (whatFinded !=null){
           idArray.push(json[i].CATEGORIES.CATEGORY[j]["-ID"])
-          console.log(idArray);
+          
         }
 
 
@@ -82,7 +82,7 @@ function categoryList(catName) {
                 whatFinded = whereSearch.match(catName);
            if (whatFinded !=null){
              idArray.push(json[i].CATEGORIES.CATEGORY[j].CATEGORIES.CATEGORY[k]["-ID"])
-             console.log(idArray);
+             
 
               }
               
@@ -99,19 +99,23 @@ function categoryList(catName) {
     .then((response) => response.json())
     .then((json) => {
       let count = 0;
-      let whatFinded;
+      
+      const newIdArray = idArray.toString().replaceAll(',', ' ');
+      
       let searchResults = document.querySelector(".productsWrapper");
       searchResults.innerHTML = ` `;
       for (let i = 0; i < json.length; i++) {
-        let whereSearch = json[i].PRODUCT_NAME;
-        whereSearch = whereSearch.toLowerCase();
+        let whatIsSearch = json[i]["CATEGORY_ID"];
+       whatIsSearch = whatIsSearch.toString();
+           
+      let whatIsFinded = whatIsSearch.match(`${newIdArray}`);      
+       
 
-        whatFinded = whereSearch.match(whatSearching);
-
-        if (whatFinded != null) {
+                
+        if (whatIsFinded != null) {
           if (count < 50) {
             count++;
-
+            
             searchResults.innerHTML +=
               `<div class="items">` +
               `<h1 class = "productName">` +
@@ -132,30 +136,10 @@ function categoryList(catName) {
               `<span id="dph"> €</span></span>` +
               `<a id="productDetail" href= "product.html?id=${json[i].ID}">Detail</a>`;
           }
-        }
-      }
-    });
-
-
-
-
-
-
-
-
-
-
-  
-  for(i=0; i<idArray.length; i++){
-
-    
-
-
-  }
-  
-  
-  
-  
+        } 
+      
+    }
+    }); 
   
   };
 
