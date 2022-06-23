@@ -903,7 +903,7 @@ grid-area: FIGURE;
   
     .productsWrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 0.5em;
       margin: 10em 1% 0 1%;
       
@@ -950,4 +950,27 @@ grid-area: FIGURE;
       margin: 0.5em ;
     }
   }
+
+
+  
+
+
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
