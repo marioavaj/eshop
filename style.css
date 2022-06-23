@@ -476,20 +476,23 @@ footer #copy {
   display: none;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1771px) {
   .productsWrapper {    
-    margin: 3em 5% 0 5%;
+    margin: 6.2em 5% 0 5%;
   }
-  #mainBanner {
-    top: 4.7em;    
-  }
+  #mainBanner {top: 4.7em;}
 
+  #productDetailWrapper {
+
+    width: 80%;
+    margin: auto;
+  }
   
 }
 
 @media only screen and (max-width: 1566px) {
   .productsWrapper {grid-template-columns: 1fr 1fr 1fr 1fr; margin: 5em 5% 0 5%; }
-  #mainBanner {top: 4.7em;}
+  
   #navFlexRight { display: none;}
 
   #TopMenu{
@@ -497,13 +500,12 @@ footer #copy {
   }
   
    #TopMenuMobil {
-    display: grid;
-    grid-template-areas:
-     'logo nav find findButton basket user burger';
-     grid-template-columns: 0.2fr 0.2fr 0.4fr 0.1fr 0.1fr 0.1fr 0.1fr  ;
+    display: flex;
+    flex-wrap: wrap;
+    
      padding-top:0.5em ;
      padding-bottom: 0.5em;
-     justify-items: center;
+     justify-content: center;
 
   position: fixed;
   top: 0;
@@ -514,44 +516,58 @@ footer #copy {
 }
 
 #logoMobil{
-  grid-area: logo;  
+ 
 width: 240px;
 
 }
 
 #menuLeftMobil{
-  grid-area: nav ;
+  
+  width: 5%;
+  min-width: 60px;
   margin: auto;
 }
 
 
 #topNavBasketIconMobil{
-  grid-area: basket;
+  
   margin: auto;
+  width: 5%;
+  min-width: 60px;
 }
 #userMobil{
-  grid-area: user;
+  
   margin: auto;
+  width: 5%;
+  min-width: 60px;
 }
 
 #menuRightMobil{
-  grid-area: burger;
+  min-width: 60px;
   margin: auto;
+  width: 5%;
 
 }
 
 #searchMobil{
-  grid-area: find;
-  width: 100%;
-  height: 80%;
-  margin: auto;
+  margin: 0;
+ 
+  width: 40%;
+  min-width: 320px;
+  height: 100%;
+  font-size: 2em;
+  padding: 0.3em;  
+}
+
+#inputSearchMobil{
+font-size: 1.2em;
+width: 80%;
+float: left;
 }
 
 #findMobil{
-  grid-area: findButton;
-  width: 100%;
-  height: 80%;
-  margin: auto;
+  width: 15%;
+ margin: 0;
 }
 
 .navigation{
