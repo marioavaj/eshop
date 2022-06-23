@@ -51,10 +51,11 @@ body {
 }
 
 .productsWrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 42em 5% 0 5%;
+  margin: 3em 5% 0 5%;
 }
 
 .productsWrapper img {
@@ -112,7 +113,7 @@ h1 {
 
 #mainBanner {
   z-index: -1;
-  position: absolute;
+  position: relative;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   top: 3em;
@@ -477,7 +478,7 @@ footer #copy {
 
 @media only screen and (max-width: 1600px) {
   .productsWrapper {    
-    margin: 38.7em 5% 0 5%;
+    margin: 3em 5% 0 5%;
   }
   #mainBanner {
     top: 4.7em;    
@@ -487,7 +488,7 @@ footer #copy {
 }
 
 @media only screen and (max-width: 1566px) {
-  .productsWrapper {grid-template-columns: 1fr 1fr 1fr 1fr; margin: 38.7em 5% 0 5%; }
+  .productsWrapper {grid-template-columns: 1fr 1fr 1fr 1fr; margin: 5em 5% 0 5%; }
   #mainBanner {top: 4.7em;}
   #navFlexRight { display: none;}
 
@@ -568,39 +569,59 @@ width: 240px;
      
   } 
   
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 900px) {
   
   .productsWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
-    margin: 4em 5% 0 5%;
+    margin:5em 1% 0 1%;
   }
 
 
 
-  .topnavWithoutLogo {
-   
-   
-    padding: 1.3em 1em 1em 1em;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-  }
+  
 
 
 
 
   }
+
+  @media only screen and (max-width: 600px) {
+  
+    .productsWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5em;
+      margin: 5em 1% 0 1%;
+    }
+  
+  
+  
+    
+  
+  
+  
+  
+    }
+
+  @media only screen and (max-width: 500px) {
+  
+    .productsWrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 0.5em;
+      margin: 5em 1% 0 1%;
+    }
+  
+  
+  
+    
+  
+  
+  
+  
+    }
   .topnav a.icon {
     float: right;
     display: block;
