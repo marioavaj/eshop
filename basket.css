@@ -375,6 +375,8 @@
   width: 100%;
   display: -ms-flexbox; /* IE10 */
   display: flex;
+  flex-direction: column;
+  justify-items: center;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
@@ -382,12 +384,14 @@
 
 .col-25 {
   -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+  flex: 100%;
 }
 
 .col-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 100%;
+  margin: 0;
+  padding:  0;
 }
 
 .col-75 {
@@ -461,21 +465,29 @@ span.price {
 #contactBasketWprapper {
 display: flex;
 flex-direction: column;
-justify-content: center;
-  width: 70%;
+justify-items: auto;
+  width: 50%;
   margin: auto;
   
   
 }
 
 .sendOrderButton {
-  margin: 2em auto 5em auto;
-  width: 16em;
+  margin: 1em auto 8em auto;
+  width: 8em;
 }
 
 @media only screen and (max-width: 1307px) {
+
+  .continueOrderingButtonHead {
+
+    margin: 2em auto 1.4em auto;
+
+  }
+
+
   #basketWrapperGrid {
-    width: 100%;
+    width: 98%;
   }
 
   #basketWrapperHeader {
@@ -507,13 +519,13 @@ justify-content: center;
   }
 
   #totalPriceInBasket {
-    margin-top: 3em;
+    margin-top: 4em;
     font-size: 0.7em;
     grid-template-columns:   0.4fr 0.7fr 0.8fr 1fr;
         
   }
 
-  input[type="text"] {   width: 100%;
+  input[type="text"] {   width: 90%;
    
   }
 
@@ -579,8 +591,9 @@ justify-content: center;
       }
 
       #contactBasketWprapper {
-
-        width: 90%;
+        margin: auto;
+padding: auto;
+        width: 100%;
         
       }
 
