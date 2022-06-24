@@ -53,22 +53,22 @@
     </div>
 
     <div id="TopMenuMobil"> 
-      <a id="menuLeftMobil" class="topnavWithoutLogoMobil" href="#"><i class="fa-solid fa-bars"></i></a>
+      <a id="menuLeftMobil" class="topnavWithoutLogoMobil" style="font-size: 20px;" href="#"><i class="fa-solid fa-bars"></i></a>
       
       <a href="index.html"><img  id="logoMobil" src="./img/logo-removebg-preview.png" alt="logo"></a>
-      
-     
-      
       <div id="searchMobil">
       <input id="inputSearchMobil" type="search" name="search" />
-      <button id="findMobil" class="fa-solid fa-magnifying-glass" style="font-size: 30px;"  onclick="searching()"></button></div>
+      <button id="findMobil" class="fa-solid fa-magnifying-glass" style="font-size: 20px;"  onclick="searching()"></button></div>
 
-      <a id="topNavBasketIconMobil" class="topnavWithoutLogoMobil" href="basket.html"><i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i></a>
-      <a id="userMobil" class="topnavWithoutLogoMobil" href="#"><i class="fa-regular fa-user" style="font-size: 30px;"></i></a>
-      <a id="menuRightMobil" class="topnavWithoutLogoMobil" href="#" style="font-size: 30px;"><i class="fa-solid fa-bars"></i></a>
-    
-
-   </div>   
+      <a id="topNavBasketIconMobil" class="topnavWithoutLogoMobil" href="basket.html"><i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i></a>
+      <a id="userMobil" class="topnavWithoutLogoMobil" href="#"><i class="fa-regular fa-user" style="font-size: 20px;"></i></a>
+      <a id="menuRightMobil" class="topnavWithoutLogoMobil"  onclick="expandMenu()" style="font-size: 20px;"><i class="fa-solid fa-bars"></i>
+      <div id="rightExpandMenu">
+        <a class="topnavWithoutLogoExpandMenu" href="#"><i class="fa-solid fa-people-group"></i> Kto sme</a>
+           <a class="topnavWithoutLogoExpandMenu"  href="#contact"><i class="fa-regular fa-credit-card"></i> Ako nakupovať</a>
+           <a class="topnavWithoutLogoExpandMenu"  href="#about"><i class="fa-solid fa-address-card"></i> Kontakt</a>
+         </div></a>
+   </div>
 
     <div id="basketWrapperGrid">
       <div id="basketWrapperHeader">
@@ -272,5 +272,6 @@
     </footer>
 
     <script src="./basket.js"></script>
+    <script src=" responsiveMenu.js "></script>
   </body>
 </html>

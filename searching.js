@@ -1,6 +1,12 @@
 function searching() {
   /**nacitanie retazca od uzivatela */
   var whatSearching = document.getElementById("search").value;
+  
+  if(whatSearching = " "){
+    whatSearching = document.getElementById("inputSearchMobil").value;
+
+  }
+  
   whatSearching = whatSearching.toLowerCase();
 
   /**vyhladanie v produktoch v JSON */
