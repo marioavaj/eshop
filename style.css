@@ -912,7 +912,7 @@ footer #copy {
 
   #rightExpandMenu {
     width: 100%;
-    top: 20em;
+    top: -20em;
     text-align: center;
     display: none;
     flex-direction: column;
@@ -920,17 +920,11 @@ footer #copy {
     z-index: 1;
     background-color: #2c2d2d;
     padding: 1em;
-    border-radius: 0 0 3px 3px;
-    
-    
-   
+    border-radius: 0 0 3px 3px; 
      
   }
 
-  #rightExpandMenu:hover {
-
-
-  }
+  
 
   .topnavWithoutLogoExpandMenu{
 text-decoration: none;
