@@ -762,7 +762,7 @@ footer #copy {
     cursor: pointer;
   }
 
-  #searchMobil {
+  .searchMobil {
     display: flex;
     margin: 0;
     width: 40%;
@@ -921,6 +921,7 @@ footer #copy {
     background-color: #2c2d2d;
     padding: 1em;
     border-radius: 0 0 3px 3px; 
+    
      
   }
 
