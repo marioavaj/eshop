@@ -12,8 +12,10 @@ function expandMenu(){
     } 
 }
 
-var categoryTree = document.querySelector(".navigation");
 var displayedTree = false;
+
+var categoryTree = document.querySelector(".navigation");
+
 
 function expandCategoryTree(){
 
