@@ -1,5 +1,7 @@
 /**import kategorii */
-let tree = document.getElementById("tree");
+var tree = document.querySelector(".tree");
+
+
 fetch("./categories.json")
   .then((response) => response.json())
   .then((json) => {

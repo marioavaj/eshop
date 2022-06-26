@@ -687,14 +687,18 @@ footer #copy {
 }
 
 @media only screen and (max-width: 1771px) {
+
+  
+
   .productsWrapper {
     margin: 6.2em 5% 0 5%;
   }
   #mainBanner {
-    top: 4.7em;
+   position: relative;
   }
 
   #productDetailWrapper {
+   
     width: 50%;
     margin: auto;
   }
@@ -719,9 +723,31 @@ footer #copy {
 }
 
 @media only screen and (max-width: 1566px) {
+
+/**category tree responsive*/
+
+.navigation {
+  position: absolute;
+  left: 0;
+  
+}
+
+#polygon {
+  display: none;
+}
+
+/**------------------------------------------------------*/
+
+
+#mainBanner {
+  top: 0;
+}
+
+
+
   .productsWrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 5em 5% 0 5%;
+    margin: 0 5% 0 5%;
   }
 
   #navFlexRight {
@@ -738,8 +764,6 @@ footer #copy {
     justify-content: space-between;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-
-    position: fixed;
     top: 0;
     z-index: 2;
     width: 100%;
@@ -786,9 +810,7 @@ footer #copy {
     cursor: pointer;
   }
 
-  .navigation {
-    display: none;
-  }
+  
 
   .topnavWithoutLogoMobil {
     color: silver;
@@ -841,10 +863,13 @@ footer #copy {
     margin: 0.5em;
   }
 
-  @media only screen and (max-width: 900px) {
-    #mainBanner {
-      top: 7.5em;
+  @media only screen and (max-width: 907px) {
+
+    .navigation{
+top: 6.8em;
+
     }
+    
     #productDetailWrapper {
       width: 80%;
       margin-top: 10em;
@@ -853,7 +878,7 @@ footer #copy {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 0.5em;
-      margin: 7em 1% 0 1%;
+      margin: 0 1% 0 1%;
     }
     .relatedProductsWrapper {
       grid-template-columns: 1fr 1fr 1fr;
@@ -862,10 +887,13 @@ footer #copy {
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    #mainBanner {
+  @media only screen and (max-width: 710px) {
+    .navigation{
       top: 9em;
-    }
+      
+          }
+
+    
     #productDetailWrapper {
       width: 80%;
       margin-top: 10em;
@@ -875,7 +903,7 @@ footer #copy {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 0.5em;
-      margin: 10em 1% 0 1%;
+      margin: 0em 1% 0 1%;
     }
     .relatedProductsWrapper {
       grid-template-columns: 1fr 1fr;
@@ -889,12 +917,10 @@ footer #copy {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 0.5em;
-      margin: 9.4em 1% 0 1%;
+      margin: 0 1% 0 1%;
     }
 
-    #mainBanner {
-      top: 9.3em;
-    }
+    
     #logoMobil {
       width: 150px;
     }
