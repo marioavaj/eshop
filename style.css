@@ -689,6 +689,8 @@ footer #copy {
 
 @media only screen and (max-width: 1771px) {
 
+  
+
   .navigation {
     display: flex;
     position: absolute;
@@ -733,6 +735,7 @@ footer #copy {
 /**category tree responsive*/
 
 .navigation {
+  display: none;
   position: absolute;
   left: 0;
   

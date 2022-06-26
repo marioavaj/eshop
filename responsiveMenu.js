@@ -12,13 +12,13 @@ function expandMenu(){
     } 
 }
 
-var displayedTree = false;
+
 
 var categoryTree = document.querySelector(".navigation");
-
+var displayedTree = false;
 
 function expandCategoryTree(){
-
+    
     if(displayedTree!=true){
         categoryTree.style.display = "flex";
         displayedTree=true;
