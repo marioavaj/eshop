@@ -512,7 +512,6 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: space-around;
   color: silver;
   width: 100%;
-  font-size: 1em;
   font-family: "Tahoma", Geneva, Verdana, sans-serif;
   line-height: 2;
   background-color: #2c2d2d;
@@ -546,11 +545,7 @@ footer #copy {
 .slideshow-container {
   display: none;
 }
-.foot {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
+
 
 .topnav.responsive {
   display: block;
@@ -768,7 +763,6 @@ footer #copy {
 @media only screen and (max-width: 1771px) {
 
   
-
   .navigation {
     display: flex;
     position: absolute;
@@ -777,7 +771,7 @@ footer #copy {
   }
 
   .productsWrapper {
-    margin: 6.2em 5% 0 5%;
+    margin: 2.8em 5% 0 5%;
   }
   #mainBanner {
    position: relative;
@@ -786,7 +780,7 @@ footer #copy {
   #productDetailWrapper {
    
     width: 50%;
-    margin: auto;
+    margin: 6em auto;
   }
 
   #topNavBasketIconMobil {
@@ -918,7 +912,7 @@ footer #copy {
   }
 
   #productDetailWrapper {
-    margin: 7em auto 2em auto;
+    margin: 1em auto 2em auto;
 
     display: grid;
     grid-template-areas:
@@ -937,12 +931,7 @@ footer #copy {
     min-width: 350px;
   }
 
-  .relatedProductsWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.5em;
-    margin: 1em;
-  }
+  
 
   .relatedProductsWrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -959,7 +948,7 @@ top: 6.8em;
     
     #productDetailWrapper {
       width: 80%;
-      margin-top: 10em;
+      margin-top: 1em;
     }
     .productsWrapper {
       display: grid;
@@ -976,14 +965,23 @@ top: 6.8em;
 
   @media only screen and (max-width: 710px) {
     .navigation{
-      top: 9em;
-      
+      top: 9em;      
+          }
+
+          .foot {
+            flex-direction: column;
+            text-align: center;           
+          }
+
+          .mapouter{
+            margin: auto;
+
           }
 
     
     #productDetailWrapper {
       width: 80%;
-      margin-top: 10em;
+      margin-top: 1em;
     }
 
     .productsWrapper {
@@ -1004,7 +1002,7 @@ top: 6.8em;
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 0.5em;
-      margin: 9.4em 1% 0 1%;
+      margin: 0 1% 0 1%;
     }
 
     
@@ -1013,7 +1011,7 @@ top: 6.8em;
     }
 
     #productDetailWrapper {
-      margin: 11em 1em 1em auto;
+      margin: 1em 1em 1em auto;
     }
 
     .relatedProductsWrapper {
