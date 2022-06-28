@@ -14,10 +14,11 @@ function expandMenu(){
 
 
 
-var categoryTree = document.querySelector(".navigation");
+
 var displayedTree = false;
 
 function expandCategoryTree(){
+    var categoryTree = document.querySelector(".navigation");
     
     if(displayedTree!=true){
         categoryTree.style.display = "flex";
