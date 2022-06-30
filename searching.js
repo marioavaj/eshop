@@ -160,6 +160,7 @@ function categoryList(catName) {
       const newIdArray = " " + idArray.toString().replaceAll(",", " ");
       console.log("V tomto stringu " + newIdArray);
       let searchResults = document.querySelector(".productsWrapper");
+      console.log(searchResults);
       searchResults.innerHTML = ` `;
       for (let i = 0; i < json.length; i++) {
         let whatIsSearch = json[i]["CATEGORY_ID"];
